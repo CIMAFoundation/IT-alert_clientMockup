@@ -1,9 +1,4 @@
 // Custom.scss
-// Option A: Include all of Bootstrap
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// Custom.scss
 // Option B: Include parts of Bootstrap
 
 // Required
@@ -11,15 +6,11 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-// Optional
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/code";
-@import "../node_modules/bootstrap/scss/grid";
 
 
-body {background: $blue; padding: 50px;}
+/*TOP BAR - LOGIN BAR*/
+.top_bar {background-color: #243d7d; height: 55px; padding: 12px;}
+.top_bar p {color: #ffffff;}
 
 
 
