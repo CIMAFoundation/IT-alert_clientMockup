@@ -6,11 +6,101 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+/*GENERALI*/
 
+.container-fluid {
+padding-left: 25px;
+  padding-right: 25px;
+}
+
+body {font-weight: 500;}
+.tooltip {font-size: 15px}
 
 /*TOP BAR - LOGIN BAR*/
-.top_bar {background-color: #243d7d; height: 55px; padding: 12px;}
-.top_bar p {color: #ffffff;}
+$deepblue:#243d7d;
+$ita_orange: #e1740e;
+.top_bar {
+  background-color: $deepblue;
+  height: 55px;
+  padding: 13px 0 12px 0;
+  font-weight: 550;
+  }
+.top_bar p {
+  color: #ffffff;
+  }
+.top_bar h4 {
+  margin-top: -8px;
+}
+.badge-warning {
+  background-color: $ita_orange;
+}
+.top_bar .badge-primary {
+  border: solid;
+  border-width: 2px;
+}
+.fa-15x {
+  font-size: 1.5em;
+}
+.top_bar a {
+  padding-left: 10px;
+}
+.ruolo {
+font-weight: 500;
+  font-size: 14px;
+}
+
+/*MENU BAR*/
+.menu_icon{
+  margin: auto 10px auto auto;
+}
+.nav-tabs {
+  min-height: 95px;
+}
+.main_menu img {
+  height: 65px;
+}
+.main_menu{
+  border-bottom-color: #dfe4f2;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.nav-tabs {
+  border-bottom-width: 0px;
+ }
+.nav-link.active {
+  border-width: 4px;
+}
+
+/*CONTAINER HOME*/
+.separatore3 {
+
+}
+
+.filtro {
+  background-color:#f7f7f9;
+  padding-top: 35px;
+  padding-left: 25px;
+  min-height: 80vh;
+}
+
+.table_invio {
+    padding-left: 15px;
+    padding-top: 35px;
+  }
+
+.table_invio h6{
+background-color: $blue;
+  padding-right: 10px;
+  color: white;
+}
+
+/* SEVERITA*/
+.sev {font-weight: 800;}
+.arancio {color: orange;}
+.verde {color: green;}
+.rossa {color: red;}
+
+
 
 
 
