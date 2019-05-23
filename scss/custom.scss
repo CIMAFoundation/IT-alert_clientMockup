@@ -1,104 +1,140 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
-
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+//variabili
+$deepblue: #243d7d;
+$ita_orange: #e1740e;
+$white: #fff;
+$black: #111;
+
+$prange: orange;
+$green: green;
+$red: red;
+
+$pad_25:25px;
+$pad_35:35px;
+
+
+
 /*GENERALI*/
 
 .container-fluid {
-padding-left: 25px;
-  padding-right: 25px;
+  padding-left: $pad_25;
+  padding-right: $pad_25;
 }
 
-body {font-weight: 500;}
-.tooltip {font-size: 15px}
+body {
+  font-weight: 500;
+}
+
+.tooltip {
+  font-size: 15px
+}
 
 /*TOP BAR - LOGIN BAR*/
-$deepblue:#243d7d;
-$ita_orange: #e1740e;
+
 .top_bar {
   background-color: $deepblue;
   height: 55px;
   padding: 13px 0 12px 0;
-  font-weight: 550;
+  font-weight: 500;
+  a {
+    padding-left: 10px;
   }
-.top_bar p {
-  color: #ffffff;
+  p {
+    color: $white;
   }
-.top_bar h4 {
-  margin-top: -8px;
+  h4 {
+    margin-top: -8px;
+    &.badge-primary {
+      border: solid;
+      border-width: 2px;
+    }
+  }
 }
+
+
+
+
 .badge-warning {
   background-color: $ita_orange;
 }
-.top_bar .badge-primary {
-  border: solid;
-  border-width: 2px;
-}
+
+
+
 .fa-15x {
   font-size: 1.5em;
 }
-.top_bar a {
-  padding-left: 10px;
-}
+
+
 .ruolo {
-font-weight: 500;
+  font-weight: 500;
   font-size: 14px;
 }
 
 /*MENU BAR*/
-.menu_icon{
+.menu_icon {
   margin: auto 10px auto auto;
 }
-.nav-tabs {
-  min-height: 95px;
+
+.nav {
+  &-tabs {
+    min-height: 95px;
+    border-bottom-width: 0;
+  }
+  &-link.active {
+    border-width: 4px;
+  }
 }
-.main_menu img {
-  height: 65px;
-}
-.main_menu{
+
+.main_menu {
   border-bottom-color: #dfe4f2;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+  img {
+    height: 65px;
+  }
 }
-.nav-tabs {
-  border-bottom-width: 0px;
- }
-.nav-link.active {
-  border-width: 4px;
-}
+
+
+
 
 /*CONTAINER HOME*/
-.separatore3 {
-
-}
+.separatore3 {}
 
 .filtro {
-  background-color:#f7f7f9;
-  padding-top: 35px;
-  padding-left: 25px;
+  background-color: #f7f7f9;
+  padding-top: $pad_35;
+  padding-left: $pad_25;
   min-height: 80vh;
 }
 
 .table_invio {
-    padding-left: 15px;
-    padding-top: 35px;
+  padding-left: 15px;
+  padding-top: $pad_35;
+  h6 {
+    background-color: $blue;
+    padding-right: 10px;
+    color: white;
   }
-
-.table_invio h6{
-background-color: $blue;
-  padding-right: 10px;
-  color: white;
 }
 
+
+
+
 /* SEVERITA*/
-.sev {font-weight: 800;}
-.arancio {color: orange;}
-.verde {color: green;}
-.rossa {color: red;}
+.sev {  font-weight: 800;}
+
+.arancio {  color: $orange;}
+
+.verde {  color: $green;}
+
+.rossa {  color: $red;}
+
 
 
 
