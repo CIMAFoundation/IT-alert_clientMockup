@@ -11,16 +11,19 @@ $ita_orange: #e1740e;
 $white: #fff;
 $black: #111;
 
-$prange: orange;
+$orange: orange;
 $green: green;
 $red: red;
 
 $pad_25:25px;
 $pad_35:35px;
 
+$h-footer: 140px;
+$h-header: 140px;
 
 
-/*GENERALI*/
+
+/*GENERALI----------------------------------*/
 
 .container-fluid {
   padding-left: $pad_25;
@@ -29,13 +32,14 @@ $pad_35:35px;
 
 body {
   font-weight: 500;
+  min-height: 100vh;
 }
 
 .tooltip {
   font-size: 15px
 }
 
-/*TOP BAR - LOGIN BAR*/
+/*TOP BAR - LOGIN BAR------------------------------*/
 
 .top_bar {
   background-color: $deepblue;
@@ -47,6 +51,7 @@ body {
   }
   p {
     color: $white;
+    font-weight: 600;
   }
   h4 {
     margin-top: -8px;
@@ -57,28 +62,22 @@ body {
   }
 }
 
-
-
-
 .badge-warning {
   background-color: $ita_orange;
 }
 
-
-
 .fa-15x {
   font-size: 1.5em;
 }
-
 
 .ruolo {
   font-weight: 500;
   font-size: 14px;
 }
 
-/*MENU BAR*/
+/*MENU BAR-------------------------------------------*/
 .menu_icon {
-  margin: auto 10px auto auto;
+  margin: auto 10px auto 0px;
 }
 
 .nav {
@@ -100,33 +99,37 @@ body {
   }
 }
 
-
-
-
-/*CONTAINER HOME*/
+/*CONTAINER HOME---------------------------------------*/
 .separatore3 {}
 
-.filtro {
+.barra_lat {
   background-color: #f7f7f9;
   padding-top: $pad_35;
   padding-left: $pad_25;
-  min-height: 80vh;
+  min-height: calc(100vh - (#{$h-header} + #{$h-footer} + #{12px}));
+  /*min-height: 652px;*/
+
 }
 
 .table_invio {
   padding-left: 15px;
   padding-top: $pad_35;
-  h6 {
+  h5 {
     background-color: $blue;
     padding-right: 10px;
     color: white;
+    font-weight: 600;
   }
 }
 
+/*TABELLA -------------------------------------------*/
+.table td, .table th {
 
+  padding: 0.7em;
 
+}
 
-/* SEVERITA*/
+/* SEVERITA--------------------------------------------*/
 .sev {  font-weight: 800;}
 
 .arancio {  color: $orange;}
@@ -135,8 +138,29 @@ body {
 
 .rossa {  color: $red;}
 
+.td_sev { border-right: solid; border-width: 15px;
+  .arancio{border-color: $orange}
+  .verde{border-color: $green}
+  .rossa{border-color: $red}
+}
 
+/*FOOTER*/
 
+.footer {
+  background-color: $deepblue;
+  min-height: $h-footer;
+  color: $white;
+  padding: 20px 10px 20px 10px;
+  /*position: fixed;*/
+  bottom: 0px;
+  width: 100%;
+  img {
+    height: 100px
+  }
+}
+.orario h5{
+  font-weight:600;
+}
 
 
 

@@ -1,83 +1,147 @@
-/*GENERALI*/
+/*GENERALI----------------------------------*/
 .container-fluid {
   padding-left: 25px;
-  padding-right: 25px; }
+  padding-right: 25px;
+}
 
 body {
-  font-weight: 500; }
+  font-weight: 500;
+  min-height: 100vh;
+}
 
 .tooltip {
-  font-size: 15px; }
+  font-size: 15px;
+}
 
-/*TOP BAR - LOGIN BAR*/
+/*TOP BAR - LOGIN BAR------------------------------*/
 .top_bar {
   background-color: #243d7d;
   height: 55px;
   padding: 13px 0 12px 0;
-  font-weight: 500; }
-  .top_bar a {
-    padding-left: 10px; }
-  .top_bar p {
-    color: #fff; }
-  .top_bar h4 {
-    margin-top: -8px; }
-    .top_bar h4.badge-primary {
-      border: solid;
-      border-width: 2px; }
+  font-weight: 500;
+}
+.top_bar a {
+  padding-left: 10px;
+}
+.top_bar p {
+  color: #fff;
+  font-weight: 600;
+}
+.top_bar h4 {
+  margin-top: -8px;
+}
+.top_bar h4.badge-primary {
+  border: solid;
+  border-width: 2px;
+}
 
 .badge-warning {
-  background-color: #e1740e; }
+  background-color: #e1740e;
+}
 
 .fa-15x {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .ruolo {
   font-weight: 500;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
-/*MENU BAR*/
+/*MENU BAR-------------------------------------------*/
 .menu_icon {
-  margin: auto 10px auto auto; }
+  margin: auto 10px auto 0px;
+}
 
 .nav-tabs {
   min-height: 95px;
-  border-bottom-width: 0; }
+  border-bottom-width: 0;
+}
 .nav-link.active {
-  border-width: 4px; }
+  border-width: 4px;
+}
 
 .main_menu {
   border-bottom-color: #dfe4f2;
   border-bottom-style: solid;
-  border-bottom-width: 2px; }
-  .main_menu img {
-    height: 65px; }
+  border-bottom-width: 2px;
+}
+.main_menu img {
+  height: 65px;
+}
 
-/*CONTAINER HOME*/
-.filtro {
+/*CONTAINER HOME---------------------------------------*/
+.barra_lat {
   background-color: #f7f7f9;
   padding-top: 35px;
   padding-left: 25px;
-  min-height: 80vh; }
+  min-height: calc(100vh - (140px + 140px + 12px));
+  /*min-height: 652px;*/
+}
 
 .table_invio {
   padding-left: 15px;
-  padding-top: 35px; }
-  .table_invio h6 {
-    background-color: #007bff;
-    padding-right: 10px;
-    color: white; }
+  padding-top: 35px;
+}
+.table_invio h5 {
+  background-color: #007bff;
+  padding-right: 10px;
+  color: white;
+  font-weight: 600;
+}
 
-/* SEVERITA*/
+/*TABELLA -------------------------------------------*/
+.table td, .table th {
+  padding: 0.7em;
+}
+
+/* SEVERITA--------------------------------------------*/
 .sev {
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 .arancio {
-  color: #fd7e14; }
+  color: orange;
+}
 
 .verde {
-  color: green; }
+  color: green;
+}
 
 .rossa {
-  color: red; }
+  color: red;
+}
+
+.td_sev {
+  border-right: solid;
+  border-width: 15px;
+}
+.td_sev .arancio {
+  border-color: orange;
+}
+.td_sev .verde {
+  border-color: green;
+}
+.td_sev .rossa {
+  border-color: red;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #243d7d;
+  min-height: 140px;
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+  /*position: fixed;*/
+  bottom: 0px;
+  width: 100%;
+}
+.footer img {
+  height: 100px;
+}
+
+.orario h5 {
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=custom.css.map */

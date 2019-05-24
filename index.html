@@ -20,10 +20,8 @@
 
 </head>
 <body>
-
-
-<!-- TOP BAR -->
-<section id="header">
+<!-- INIZIO TOP BAR -->
+<section id="header" class="">
     <div class="top_bar">
         <div class="container-fluid">
             <div class="row">
@@ -41,8 +39,7 @@
     </div>
 </section>
 <!-- FINE TOP BAR -->
-
-<!-- MENU BAR -->
+<!-- INIZIO MENU BAR -->
 <section id="menu_bar">
     <div class="main_menu shadow-sm">
         <div class="container-fluid">
@@ -50,7 +47,7 @@
                 <img src="img/logo_sito_it_alert_esteso3X2.jpg" />
                 <ul class="nav nav-tabs nav-tabs-icon-text auto">
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home fa-15x menu_icon"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composizione.html"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-edit fa-15x menu_icon"></i>Creazione</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
                     <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
@@ -61,16 +58,13 @@
 
 </section>
 <!-- FINE MENU BAR -->
-
+<!-- INIZIO CONTAINER -->
 <section id="content">
     <div class="container-fluid">
         <div class="row">
-
-
             <!-- INIZIO FILTRO SIDEBAR -->
-
-            <div class="col-3 filtro affix-top">
-                <h6>FILTRA MESSAGGI</h6>
+            <div class="col-3 barra_lat">
+                <h5><i class="fas fa-filter"></i> FILTRA MESSAGGI</h5>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="creato" id="defaultCheck1">
                      <label class="form-check-label" for="defaultCheck1">Creato <span class="badge badge-secondary">Creato</span></label>
@@ -89,10 +83,9 @@
                 </div>
             </div>
             <!-- FINE FILTRO SIDEBAR -->
-
             <!-- INIZIO TABELLA INVII -->
             <div class="col-9 table_invio text-right">
-                <h6>TABELLA INVII IN CORSO</h6>
+                <h5>TABELLA INVII IN CORSO</h5>
                 <table class="table table-striped">
                     <thead>
                     <tr>
@@ -111,7 +104,7 @@
                         <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
                         <td>21/05/2019</td>
                         <td>8 Ore</td>
-                        <td><span class="sev arancio">ARANCIONE</span> </td>
+                        <td class="td_sev arancio"><span class="sev arancio">ARANCIONE</span> </td>
                     </tr>
                     <tr>
                         <td><span class="badge badge-secondary">Creato</span></td>
@@ -119,7 +112,7 @@
                         <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
                         <td>21/05/2019</td>
                         <td>8 Ore</td>
-                        <td><span class="sev verde">VERDE</span> </td>
+                        <td class="td_sev verde"><span class="sev verde">VERDE</span></td>
                     </tr>
                     <tr>
                         <td><span class="badge badge-success">Inviato</span></td>
@@ -127,7 +120,7 @@
                         <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
                         <td>21/05/2019</td>
                         <td>8 Ore</td>
-                        <td><span class="sev arancio">ARANCIONE</span> </td>
+                        <td class="td_sev arancio"><span class="sev arancio">ARANCIONE</span> </td>
                     </tr>
                     <tr>
                         <td><span class="badge badge-primary">Validato</span></td>
@@ -135,33 +128,30 @@
                         <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
                         <td>21/05/2019</td>
                         <td>8 Ore</td>
-                        <td><span class="sev rossa">ROSSA</span> </td>
+                        <td class="td_sev rossa"><span class="sev rossa">ROSSA</span> </td>
                     </tr>
                     </tbody>
                 </table>
-
             </div>
-
             <!-- FINE TABELLA INVII -->
-
         </div>
-
-
-
     </div>
-
 </section>
-
+<!-- FINE CONTAINER -->
+<!-- INIZIO FOOTER -->
 <section id="footer">
-
+    <div class="footer">
+        <div class="row">
+            <div class="col"><img src="img/dpc_logo_png.png" alt="Logo Dipartimento Protezione Civile"/><img src="img/cima_logo_png.png" alt="Logo Cima Foundation"/><img src="img/acrotec_logo_png.png" alt="Logo Acrotec Foundation"/></div>
+            <div class="col text-center orario my-auto"><h5>VENERDI' 24 MAGGIO 2019 | 11:42:12</h5></div>
+            <div class="col text-right my-auto"><a>IT-Alert | Sottosistema Messaggistica Broadcast V1.0</a></div>
+        </div>
+    </div>
 </section>
-
-
-
-
-
+<!-- FINE FOOTER -->
 <!-- JS -->
 <script src="node_modules/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+<!-- TOOLTIP BOOTSTRAP -->
 <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
