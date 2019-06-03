@@ -39,6 +39,16 @@ body {
   font-size: 15px
 }
 
+.separatore20 {padding-top: 20px}
+
+.separatore40 {padding-top: 40px}
+
+hr {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-top: 2px solid rgba(0,0,0,.1);
+}
+
 /*TOP BAR - LOGIN BAR------------------------------*/
 
 .top_bar {
@@ -75,6 +85,21 @@ body {
   font-size: 14px;
 }
 
+.btn-group-sm > .btn, .btn-sm {
+  padding: 2px 5px;
+}
+
+.dropdown-menu {
+  padding: 0px;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.dropdown-menu::before {
+    left: auto;
+    right: 5px;
+}
+
 /*MENU BAR-------------------------------------------*/
 .menu_icon {
   margin: auto 10px auto 0px;
@@ -99,8 +124,10 @@ body {
   }
 }
 
+
+
 /*CONTAINER HOME---------------------------------------*/
-.separatore3 {}
+
 
 .barra_lat {
   background-color: #f7f7f9;
@@ -144,7 +171,51 @@ body {
   .rossa{border-color: $red}
 }
 
-/*FOOTER*/
+/*TEMPLATE EDITOR ------------------------------------------*/
+.titolo_modelli {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form-control, .filter-option {
+  background-color: #f7f7f9;
+  }
+.search {background-color: #fff;}
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea, .form-group textarea {
+  border-radius: 10px;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+}
+
+.form-control:focus {
+  border: solid 2px rgba(0,123,255,.25) ;
+  transition: 0,7s;
+}
+
+.page_prev {
+  width: 100%;
+  height: 387px;
+  background-image: url("../img/phone.png");
+  background-size: cover;
+  padding: 55px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-block {
+  border-radius: 5px;
+}
+.cerca {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*FOOTER ------------------------------------------*/
 
 .footer {
   background-color: $deepblue;
@@ -161,6 +232,8 @@ body {
 .orario h5{
   font-weight:600;
 }
+
+/*SOVRASCRIVE BOOTSTRAP ORIGINALE -----------------------*/
 
 
 
