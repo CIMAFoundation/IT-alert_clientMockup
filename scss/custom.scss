@@ -100,6 +100,12 @@ hr {
     right: 5px;
 }
 
+.titolino{
+  font-size: 1rem;
+  background-color: #f7f7f9 ;
+  padding-left: 5px;
+}
+
 /*MENU BAR-------------------------------------------*/
 .menu_icon {
   margin: auto 10px auto 0px;
@@ -146,8 +152,12 @@ hr {
     padding-right: 10px;
     color: white;
     font-weight: 600;
+    padding: 5px;
   }
+
 }
+
+h5 .green {background-color: $green;}
 
 /*TABELLA -------------------------------------------*/
 .table td, .table th {
@@ -171,7 +181,7 @@ hr {
   .rossa{border-color: $red}
 }
 
-/*TEMPLATE EDITOR ------------------------------------------*/
+/*TEMPLATE EDITOR & CRAZIONE MSG------------------------------------------*/
 .titolo_modelli {
   display: flex;
   justify-content: space-between;
@@ -214,6 +224,12 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   display: flex;
   justify-content: flex-end;
 }
+.modal-lg {min-width: 1250px}
+
+.aree_pred {background-color: #f7f7f9}
+
+.info_gen p {padding-left: 5px}
+
 
 /*FOOTER ------------------------------------------*/
 

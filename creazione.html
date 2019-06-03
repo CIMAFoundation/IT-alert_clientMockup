@@ -76,7 +76,7 @@
             <!-- INIZIO TABELLA TEMPLATE SIDEBAR -->
             <div class="col-4 barra_lat">
                 <div class="titolo_modelli">
-                    <h5><i class="fas fa-cloud-download-alt"></i> MODELLI SALVATI</h5>
+                    <h4><i class="fas fa-cloud-download-alt"></i> MODELLI SALVATI</h4>
                 </div>
                 <div class="separatore20"></div>
                 <div class="cerca">
@@ -215,25 +215,110 @@
                         <iframe class="rounded-lg" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.13194274902344%2C44.196236032543716%2C8.705291748046877%2C44.414654778606874&amp;layer=mapnik" style=""></iframe><br/>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modale_mappa_manolib"><i class="fas fa-pencil-alt"></i>  Disegno Manuale</button>
-                        <button type="button" class="btn btn-secondary btn-lg btn-block"><i class="fas fa-vector-square"></i>  Area Predefinita</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#modale_mappa_manolib"><i class="fas fa-draw-polygon"></i>  Disegno Manuale</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#modale_area_pred"><i class="fas fa-vector-square"></i>  Area Predefinita</button>
 
-                        <!-- Modal DISEGNO A MANO LIBERA -->
+                        <!-- MODALE DISEGNO A MANO LIBERA -->
                         <div class="modal fade" id="modale_mappa_manolib" tabindex="-1" role="dialog" aria-labelledby="modale_mappa_manolib" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content rounded-lg">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">DISEGNA MAPPA MANO LIBERA</h5>
+                                        <h4 class="modal-title" id="exampleModalLongTitle">DISEGNA MAPPA MANO LIBERA</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <iframe width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.371195793151857%2C44.21204888378048%2C8.442864418029787%2C44.23938832892952&amp;layer=mapnik"></iframe><br/>
+                                        <iframe class="rounded-lg" width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.371195793151857%2C44.21204888378048%2C8.442864418029787%2C44.23938832892952&amp;layer=mapnik"></iframe><br/>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Disenga Polionda</button>
-                                        <button type="button" class="btn btn-primary">Salva Coordinate</button>
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-draw-polygon"></i> Disenga Polionda</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-download"></i>Salva Coordinate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MODALE AREA PREDEFINITA -->
+                        <div class="modal fade" id="modale_area_pred" tabindex="-1" role="dialog" aria-labelledby="modale_area_pred" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content rounded-lg">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLongTitle">SELEZIONA AREA PREDEFINITA</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-3 text-left">
+                                                <h5><i class="fas fa-layer-group"></i> LAYER PREDEFINITI</h5>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="creato" id="conf_com">
+                                                    <label class="form-check-label" for="conf_com">Confini Comunali</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="validato" id="conf_prov">
+                                                    <label class="form-check-label" for="conf_prov">Confini Provinciali</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="invio_p" id="conf_reg">
+                                                    <label class="form-check-label" for="conf_reg">Confini Regionali </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="inviato" id="aree_all">
+                                                    <label class="form-check-label" for="aree_all">Aree di Allertamento</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="inviato" id="bac_idro">
+                                                    <label class="form-check-label" for="bac_idro">Bacini Idrografici</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 text-left aree_pred">
+                                                    <h5 green><i class="fas fa-vector-square"></i> AREE PREDEFINITE</h5>
+                                                <div class="cerca">
+                                                    <div class="form-group no-margin">
+                                                        <input type="text" class="form-control search" id="formNome" placeholder="Digita il testo...">
+                                                    </div>
+                                                    <button class="btn btn-secondary btn-xs btn-icon"><i class="fas fa-search" style="margin-right: 10px"></i> CERCA</button>
+                                                </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="creato" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">Liguria</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck2">
+                                                        <label class="form-check-label" for="defaultCheck2">Piemonte</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="invio_p" id="defaultCheck3">
+                                                        <label class="form-check-label" for="defaultCheck3">Lombardia</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="inviato" id="defaultCheck4">
+                                                        <label class="form-check-label" for="defaultCheck4">Veneto</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="inviato" id="defaultCheck5">
+                                                        <label class="form-check-label" for="defaultCheck5">Emilia Romagna</label>
+                                                    </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="inviato" id="defaultCheck6">
+                                                    <label class="form-check-label" for="defaultCheck6">Friuli Venezia Giulia</label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="inviato" id="defaultCheck7">
+                                                    <label class="form-check-label" for="defaultCheck7">Lazio</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <iframe class="rounded-lg" width="100%" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.371195793151857%2C44.21204888378048%2C8.442864418029787%2C44.23938832892952&amp;layer=mapnik"></iframe><br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-download"></i>  Salva Coordinate</button>
                                     </div>
                                 </div>
                             </div>
@@ -246,10 +331,81 @@
                 <div class="separatore40"></div>
                 <div class="row">
                     <div class="col-12">
-                        <button type="button" class="btn btn-success btn-lg btn-block"><i class="fas fa-share"></i>  PROCEDI</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#procedi"><i class="fas fa-share"></i>  PROCEDI</button>
                     </div>
                 </div>
                 <div class="separatore20"></div>
+
+                <!-- MODALE PROCEDI -->
+                <div class="modal fade" id="procedi" tabindex="-1" role="dialog" aria-labelledby="procedi" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content rounded-lg">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLongTitle">PROCEDI</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-left">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h6>INFORMAZIONI GENERALI</h6><hr>
+                                            </div>
+                                        </div>
+                                        <div class="row info_gen">
+                                            <div class="col-6">
+                                                <div class="titolino"><strong>NOME:</strong></div>
+                                                <p>Alluvione Liguria</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="titolino"><strong>TIPOLOGIA:</strong></div>
+                                                <p>Tipologia 1</p>
+                                            </div>
+                                        </div>
+                                        <div class="separatore40"></div>
+                                        <div class="row info_gen">
+                                            <div class="col-4">
+                                                <div class="titolino"><strong>DATA:</strong></div>
+                                                <p>16/05/2019</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="titolino"><strong>VALIDITA':</strong></div>
+                                                <p>8 Ore</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="titolino"><strong>SEVERITA':</strong></div>
+                                                <p>GIALLA</p>
+                                            </div>
+                                        </div>
+                                        <div class="separatore40"></div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                            <h6>MESSAGGIO</h6><hr>
+                                               <p> Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna</p>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h6>AREA COINVOLTA</h6><hr>
+                                        <iframe class="rounded-lg" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.371195793151857%2C44.21204888378048%2C8.442864418029787%2C44.23938832892952&amp;layer=mapnik"></iframe><br/>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
+                                <button type="button" class="btn btn-success"><i class="fas fa-paper-plane"></i> Salva</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
