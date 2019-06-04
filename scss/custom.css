@@ -152,17 +152,17 @@ h5 .green {
   color: red;
 }
 
-.td_sev {
+.td_sev, .info_sev {
   border-right: solid;
   border-width: 15px;
 }
-.td_sev .arancio {
+.td_sev .arancio, .info_sev .arancio {
   border-color: orange;
 }
-.td_sev .verde {
+.td_sev .verde, .info_sev .verde {
   border-color: green;
 }
-.td_sev .rossa {
+.td_sev .rossa, .info_sev .rossa {
   border-color: red;
 }
 
@@ -228,6 +228,45 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
   padding-left: 5px;
 }
 
+.selezionata {
+  border-right: 5px solid #007bff;
+}
+
+/*INVIO------------------------------------------*/
+/*AMMINISTRAZIONE-------------------------------*/
+.menu_amm .nav-tabs {
+  background-color: transparent;
+}
+
+.info_ruolo {
+  background-color: #f7f7f9;
+  padding: 15px 25px 15px 25px;
+  font-style: italic;
+  color: #5b6f82;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.bull_severita {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+}
+
+.bull_arancio {
+  background-color: orange;
+}
+
+.bull_verde {
+  background-color: green;
+}
+
+.bull_rossa {
+  background-color: red;
+}
+
 /*FOOTER ------------------------------------------*/
 .footer {
   background-color: #243d7d;
@@ -247,5 +286,10 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 }
 
 /*SOVRASCRIVE BOOTSTRAP ORIGINALE -----------------------*/
+.nav-tabs.nav-tabs-vertical .nav-item.show .nav-link, .nav-tabs.nav-tabs-vertical .nav-link.active {
+  border-bottom: none;
+  border-right: 5px solid;
+  border-right-color: #06c;
+}
 
 /*# sourceMappingURL=custom.css.map */

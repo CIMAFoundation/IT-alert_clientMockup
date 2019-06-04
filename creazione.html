@@ -60,8 +60,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home fa-15x menu_icon"></i>Home</a></li>
                     <li class="nav-item"><a class="nav-link " href="composizione.html"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-edit fa-15x menu_icon"></i>Creazione</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invio.html"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amministrazione.html"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
                 </ul>
             </div>
         </div>
@@ -113,7 +113,7 @@
                         <td>Friuli Venezia Giulia</td>
                         <td><span class="badge badge-primary"><i class="fas fa-file-upload"></i> Utilizza</span></td>
                     </tr>
-                    <tr>
+                    <tr class="selezionata">
                         <td>Alluvione</td>
                         <td>Rischio Idraulico</td>
                         <td>Liguria</td>
@@ -336,6 +336,27 @@
                 </div>
                 <div class="separatore20"></div>
 
+                <!-- MODALE CONFERMA e SALVA INTERNO AL MODALE PROCEDI-->
+                <div class="modal fade" id="conferma_salva" tabindex="-1" role="dialog" aria-labelledby="conferma_salva" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                        <div class="modal-content rounded-lg">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLongTitle">MESSAGGIO CREATO CORRETTAMENTE</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Vuoi salvare il messaggio come un modello predefinito?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">SI, salvalo</button>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">NO, grazie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- MODALE PROCEDI -->
                 <div class="modal fade" id="procedi" tabindex="-1" role="dialog" aria-labelledby="procedi" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
@@ -376,7 +397,7 @@
                                             </div>
                                             <div class="col-4">
                                                 <div class="titolino"><strong>SEVERITA':</strong></div>
-                                                <p>GIALLA</p>
+                                                <p class="info_sev arancio">GIALLA</p>
                                             </div>
                                         </div>
                                         <div class="separatore40"></div>
@@ -401,7 +422,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
-                                <button type="button" class="btn btn-success"><i class="fas fa-paper-plane"></i> Salva</button>
+                                <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#conferma_salva"><i class="fas fa-paper-plane"></i> Salva</button>
                             </div>
                         </div>
                     </div>

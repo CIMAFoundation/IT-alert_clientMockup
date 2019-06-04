@@ -60,8 +60,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home fa-15x menu_icon"></i>Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
                     <li class="nav-item"><a class="nav-link" href="creazione.html"><i class="fas fa-edit fa-15x menu_icon"></i>Creazione</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invio.html"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amministrazione.html"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
                 </ul>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <!-- INIZIO TABELLA TEMPLATE SIDEBAR -->
             <div class="col-4 barra_lat">
                 <div class="titolo_modelli">
-                    <h5><i class="fas fa-cloud-download-alt"></i> MODELLI SALVATI</h5>
+                    <h4><i class="fas fa-cloud-download-alt"></i> MODELLI SALVATI</h4>
                     <button class="btn btn-success btn-xs btn-icon"><i class="fas fa-plus" style="margin-right: 10px"></i>NUOVO MODELLO</button>
                 </div>
                 <div class="separatore20"></div>
@@ -114,7 +114,7 @@
                         <td>Friuli Venezia Giulia</td>
                         <td><span class="badge badge-primary"><i class="fas fa-edit"></i> Modifica</span></td>
                     </tr>
-                    <tr>
+                    <tr class="selezionata">
                         <td>Alluvione</td>
                         <td>Rischio Idraulico</td>
                         <td>Liguria</td>
@@ -330,11 +330,34 @@
                 <div class="separatore40"></div>
                 <div class="row">
                     <div class="col-6">
-                        <button type="button" class="btn btn-success btn-lg btn-block"><i class="fas fa-plus"></i>  Crea Nuovo Modello</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#conferma_salva_mod"><i class="fas fa-plus"></i>  Crea Nuovo Modello</button>
                     </div>
                     <div class="col-6">
                         <button type="button" class="btn btn-success btn-lg btn-block disabled"><i class="fas fa-check"></i>  Salva Modello</button>
                     </div>
+
+
+                    <!-- MODALE CONFERMA e SALVA MODELLO-->
+                    <div class="modal fade" id="conferma_salva_mod" tabindex="-1" role="dialog" aria-labelledby="conferma_salva_mod" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                            <div class="modal-content rounded-lg">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLongTitle">MODELLO CREATO CORRETTAMENTE</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Puoi procedere all'invio del messaggio nella sezione "Creazione"
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> SALVA E CHIUDI</button>
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-times"></i> ANNULLA</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
                 <div class="separatore20"></div>
@@ -372,6 +395,9 @@
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     })
+
+
+
 </script>
 </body>
 </html>

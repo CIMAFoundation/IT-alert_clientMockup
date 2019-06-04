@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IT-alert | APPLICAZIONE MESSAGGI</title>
+
+    <!--script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <!--<script src="./bootstrap-italia.min.js"></script>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="scss/custom.css">
+    <!-- Font Awesome Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- INIZIO TOP BAR -->
+<section id="header" class="">
+    <div class="top_bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                <p>IT-alert | APPLICAZIONE MESSAGGI</p>
+                </div>
+                <div class="col text-center">
+                    <h4><span class="badge badge-primary">CBE-1</span></h4>
+                </div>
+                <div class="col text-right">
+                    <p><i class="fas fa-user-circle fa-15x"></i><a>Ajieje Brazov </a><!-- <span class="font-italic ruolo dropdown-toggle">Responsabile Messaggio</span>--></p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Amministratore
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Amministratore</a>
+                        <a class="dropdown-item" href="#">Sviluppatore</a>
+                        <a class="dropdown-item" href="#">Tester</a>
+                        <a class="dropdown-item" href="#">Responsabile Messaggio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FINE TOP BAR -->
+<!-- INIZIO MENU BAR -->
+<section id="menu_bar">
+    <div class="main_menu shadow-sm">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="img/logo_sito_it_alert_esteso3X2.jpg" />
+                <ul class="nav nav-tabs nav-tabs-icon-text auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-home fa-15x menu_icon"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composizione.html"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="creazione.html"><i class="fas fa-edit fa-15x menu_icon"></i>Creazione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invio.html"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- FINE MENU BAR -->
+<!-- INIZIO CONTAINER -->
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- INIZIO MENU AMMINISTRATIVO -->
+            <div class="col-2 barra_lat menu_amm">
+                <h4><i class="fas fa-cogs"></i> MENU</h4>
+                <div class="nav nav-tabs nav-tabs-vertical nav-tabs-vertical-background" id="nav-vertical-tab-bg" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="utenti-tab-nav" data-toggle="tab" href="#utenti-tab" role="tab" aria-controls="utenti-tab-nav" aria-selected="true"><i class="fas fa-users fa-15x"></i> Utenti</a>
+                    <a class="nav-link" id="ruoli-tab-nav" data-toggle="tab" href="#ruoli-tab" role="tab" aria-controls="ruoli-tab-nav" aria-selected="false"><i class="fas fa-user-tag fa-15x"></i> Ruoli</a>
+                    <a class="nav-link" id="ingestion-tab-nav" data-toggle="tab" href="#ingestion-tab" role="tab" aria-controls="ingestion-tab-nav" aria-selected="false"> <i class="fas fa-server fa-15x"></i>Ingestion</a>
+                </div>
+            </div>
+            <!-- FINE MENU AMMINISTRATIVO -->
+            <!-- INIZIO PAGINE UTENTI - RUOLI - INGESTION -->
+            <div class="col-10 table_invio text-right">
+                <div class="tab-content" id="nav-vertical-tabContent">
+                    <!----------------------------------------------- CONTENUTO TAB UTENTI-------------------------------------->
+                    <div class="tab-pane fade show active" id="utenti-tab" role="tabpanel" aria-labelledby="utenti-tab">
+
+                            <h5>GESTIONE UTENTI</h5>
+                        <button class="btn btn-success btn-xs btn-icon"><i class="fas fa-plus" style="margin-right: 10px"></i>AGGIUNGI UTENTE</button>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Nome &#9662</th>
+                                    <th scope="col">Cognome &#9662</th>
+                                    <th scope="col">Ruoli</th>
+                                    <th scope="col">Azioni</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Alessandro</td>
+                                    <td>Casasola</td>
+                                    <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span></td>
+                                    <td><button class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#user_mod"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#user_mod"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Manuel</td>
+                                    <td>Cavallaro</td>
+                                    <td><span class="badge badge-primary">Amministratore</span> <span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span></td>
+                                    <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Daniele</td>
+                                    <td>Debernardi</td>
+                                    <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span> <span class="badge badge-primary">Responsabile Messaggio</span></td>
+                                    <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Dario</td>
+                                    <td>Rubado</td>
+                                    <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Responsabile Messaggio</span></td>
+                                    <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                    </div>
+
+                    <!----------------------------------------------- CONTENUTO TAB RUOLI-------------------------------------->
+
+                    <div class="tab-pane fade" id="ruoli-tab" role="tabpanel" aria-labelledby="ruoli-tab">
+                        <h5>GESTIONE RUOLI</h5>
+                            <div class="row text-left">
+                                <div class="col-4 separatore20">
+                                    <p>Seleziona un ruolo per vedere tutti gli utenti che lo ricoprono:</p>
+                                    <div class="form-group">
+                                        <div class="bootstrap-select-wrapper">
+
+                                            <select title="Seleziona un ruolo">
+                                                <option value="Value 1">Amministratore</option>
+                                                <option value="Value 2" selected>Sviluppatore</option>
+                                                <option value="Value 3">Tester</option>
+                                                <option value="Value 4">Responsabile Messaggio</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 rounded-lg info_ruolo">
+                                    <h6>CARATTERISTICHE</h6>
+                                    <p>L'utente <strong>Sviluppatore</strong> può scrivere e modificare i codici sorgente della piattaforma, implementare i diversi moduli di tutte e tre le linee di sviluppo, test e operativa.</p>
+                                </div>
+                            </div>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Nome &#9662</th>
+                                <th scope="col">Cognome &#9662</th>
+                                <th scope="col">Ruoli</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Alessandro</td>
+                                <td>Casasola</td>
+                                <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span></td>
+                                <td><button class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#user_mod"><i class="fas fa-eye" ></i> Dettagli Utente</button> <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#user_mod"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                            </tr>
+                            <tr>
+                                <td>Manuel</td>
+                                <td>Cavallaro</td>
+                                <td><span class="badge badge-primary">Amministratore</span> <span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span></td>
+                                <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                            </tr>
+                            <tr>
+                                <td>Daniele</td>
+                                <td>Debernardi</td>
+                                <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Tester</span> <span class="badge badge-primary">Responsabile Messaggio</span></td>
+                                <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                            </tr>
+                            <tr>
+                                <td>Dario</td>
+                                <td>Rubado</td>
+                                <td><span class="badge badge-primary">Sviluppatore</span> <span class="badge badge-primary">Responsabile Messaggio</span></td>
+                                <td><button class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i> Dettagli Utente</button> <button class="btn btn-sm btn-success"><i class="fas fa-user-edit"></i> Modifica Utente</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!----------------------------------------------- CONTENUTO TAB INGESTION-------------------------------------->
+
+                    <div class="tab-pane fade" id="ingestion-tab" role="tabpanel" aria-labelledby="ingestion-tab">
+                        <h5>GESTIONE INGESTION AUTOMATICHE</h5>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Nome External Wrapper</th>
+                                <th scope="col">Status Messaggi Ingeriti</th>
+                                <th scope="col">Severità Consentite</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Crisi</td>
+                                <td><span class="badge badge-primary"><i class="fas fa-check"></i> Validato</span></td>
+                                <td><div class="bull_severita rounded-circle bull_verde">V</div> <div class="bull_severita rounded-circle bull_arancio">A</div> <div class="bull_severita rounded-circle bull_rossa">R</div></td>
+                                <td><button class="btn btn-sm btn-success"><i class="fas fa-edit"></i></i> Modifica Proprietà</button></td>
+                            </tr>
+                            <tr>
+                                <td>MyDewetra</td>
+                                <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Inviato</span></td>
+                                <td><div class="bull_severita rounded-circle bull_verde">V</div> <div class="bull_severita rounded-circle bull_arancio">A</div></td>
+                                <td><button class="btn btn-sm btn-success" data-toggle="modal" data-target="#ext_wrapp_mod"><i class="fas fa-edit"></i></i> Modifica Proprietà</button></td>
+                            </tr>
+                            <tr>
+                                <td>Kumale</td>
+                                <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Inviato</span></td>
+                                <td><div class="bull_severita rounded-circle bull_verde">V</div> <div class="bull_severita rounded-circle bull_arancio">A</div></td>
+                                <td><button class="btn btn-sm btn-success"><i class="fas fa-edit"></i></i> Modifica Proprietà</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE PAGINE UTENTI - RUOLI - INGESTION -->
+
+            <!-- MODALE MODIFICA UTENTE -->
+            <div class="modal fade" id="user_mod" tabindex="-1" role="dialog" aria-labelledby="user_mod" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-lg">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLongTitle">MODIFICA UTENTE</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img width="50%" class="rounded-circle" src="img/user_ph.png"/>
+                            <div class="separatore40"></div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="user_name">Nome</label>
+                                    <input type="text" class="form-control" id="user_name" placeholder="Example input" value="Alessandro">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_surname">Cognome</label>
+                                    <input type="text" class="form-control" id="user_surname" placeholder="Another input" value="Casasola">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_mail">Mail</label>
+                                    <input type="text" class="form-control" id="user_mail" placeholder="Another input" value="casasola@acrotec.it">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_phone">Telefono</label>
+                                    <input type="text" class="form-control" id="user_phone" placeholder="Another input" value="+373471702828">
+                                </div>
+                                <div class="text-left">
+                                    <h6>Ruoli Assegnati</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">Amministratore <span class="badge badge-primary">Amministratore</span></label>
+                                    </div>
+                                    <div class="form-check active">
+                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck2" checked="checked">
+                                        <label class="form-check-label" for="defaultCheck2">Sviluppatore <span class="badge badge-primary">Sviluppatore</span></label>
+                                    </div>
+                                    <div class="form-check active">
+                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck3" checked="checked">
+                                        <label class="form-check-label" for="defaultCheck3">Tester <span class="badge badge-primary">Tester</span></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">Responsabile Messaggio <span class="badge badge-primary">Responsabile Messaggio</span></label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="separatore20"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- MODALE PROPRIETA' EXTERNAL WRAPPER -->
+            <div class="modal fade" id="ext_wrapp_mod" tabindex="-1" role="dialog" aria-labelledby="ext_wrapp_mod" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-lg">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLongTitle">PROPRIETA' EXTERNAL WRAPPER</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img width="50%" class="rounded-circle" src="img/mydewetra_logo.png"/>
+                            <div class="separatore40"></div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="user_name">Nome</label>
+                                    <input type="text" class="form-control" id="user_name" placeholder="Example input" value="MyDewetra">
+                                </div>
+                                <div class="text-left">
+                                    <p>Status messaggi in arrivo</p>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Validato <span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">Creato <span class="badge badge-primary"><i class="fas fa-check"></i> Creato</span></label>
+                                    </div>
+                                </div>
+                                <div class="text-left">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">Severità</th>
+                                            <th scope="col">Template</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><div class="bull_severita rounded-circle bull_verde">V</div> Verde</td>
+                                            <td>Template 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="bull_severita rounded-circle bull_arancio">A</div> Arancione</td>
+                                            <td>Template 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="bull_severita rounded-circle bull_rossa">R</div> Rossa</td>
+                                            <td>Template 3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="separatore20"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- FINE PAGINA AMMINISTRAZIONE -->
+        </div>
+    </div>
+</section>
+<!-- FINE CONTAINER -->
+<!-- INIZIO FOOTER -->
+<section id="footer">
+    <div class="footer">
+        <div class="row">
+            <div class="col"><img src="img/dpc_logo_png.png" alt="Logo Dipartimento Protezione Civile"/><img src="img/cima_logo_png.png" alt="Logo Cima Foundation"/><img src="img/acrotec_logo_png.png" alt="Logo Acrotec Foundation"/></div>
+            <div class="col text-center orario my-auto"><h5>VENERDI' 24 MAGGIO 2019 | 11:42:12</h5></div>
+            <div class="col text-right my-auto"><a>IT-Alert | Sottosistema Messaggistica Broadcast V1.0</a></div>
+        </div>
+    </div>
+</section>
+<!-- FINE FOOTER -->
+<!-- JS -->
+<script src="node_modules/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+<!-- TOOLTIP BOOTSTRAP -->
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>

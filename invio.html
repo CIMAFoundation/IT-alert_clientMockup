@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IT-alert | APPLICAZIONE MESSAGGI > COMPOSIZIONE</title>
+
+    <!--script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <!--<script src="./bootstrap-italia.min.js"></script>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="scss/custom.css">
+    <!-- Font Awesome Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- INIZIO TOP BAR -->
+<section id="header" class="">
+    <div class="top_bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                <p>IT-alert | APPLICAZIONE MESSAGGI</p>
+                </div>
+                <div class="col text-center">
+                    <h4><span class="badge badge-primary">CBE-1</span></h4>
+                </div>
+                <div class="col text-right">
+                    <p><i class="fas fa-user-circle fa-15x"></i><a>Ajieje Brazov </a><!-- <span class="font-italic ruolo dropdown-toggle">Responsabile Messaggio</span>--></p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Amministratore
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Amministratore</a>
+                        <a class="dropdown-item" href="#">Sviluppatore</a>
+                        <a class="dropdown-item" href="#">Tester</a>
+                        <a class="dropdown-item" href="#">Responsabile Messaggio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FINE TOP BAR -->
+<!-- INIZIO MENU BAR -->
+<section id="menu_bar">
+    <div class="main_menu shadow-sm">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="img/logo_sito_it_alert_esteso3X2.jpg" />
+                <ul class="nav nav-tabs nav-tabs-icon-text auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home fa-15x menu_icon"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="composizione.html"><i class="fas fa-magic fa-15x menu_icon"></i>Composizione</a></li>
+                    <li class="nav-item"><a class="nav-link" href="creazione.html"><i class="fas fa-edit fa-15x menu_icon"></i>Creazione</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-paper-plane fa-15x menu_icon"></i>Invio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="amministrazione.html"><i class="fas fa-cogs fa-15x menu_icon"></i>Amministrazione</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- FINE MENU BAR -->
+<!-- INIZIO CONTAINER -->
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- INIZIO TABELLA ELENCO MESSAGGI -->
+            <div class="col-7 barra_lat">
+                <div class="titolo_modelli">
+                    <h4><i class="fas fa-inbox"></i> ELENCO MESSAGGI</h4>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">Nome &#9662</th>
+                        <th scope="col">Tipo &#9662</th>
+                        <th scope="col">Area &#9662</th>
+                        <th scope="col">Messaggio</th>
+                        <th scope="col">Status &#9662</th>
+                        <th scope="col">Azione</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Alluvione</td>
+                        <td>Rischio Idraulico</td>
+                        <td>Piemonte</td>
+                        <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
+                        <td><span class="badge badge-primary"><i class="fas fa-check"></i> Creato</span></td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-eye"></i> Anteprima</span></td>
+                    </tr>
+                    <tr>
+                        <td>Terremoto</td>
+                        <td>Rischio Tellurico</td>
+                        <td>Molise</td>
+                        <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
+                        <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-eye"></i> Anteprima</span></td>
+                    </tr>
+                    <tr>
+                        <td>Incendio</td>
+                        <td>Rischio Fuoco</td>
+                        <td>Veneto</td>
+                        <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
+                        <td><span class="badge badge-primary"><i class="fas fa-check"></i> Creato</span></td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-eye"></i> Anteprima</span></td>
+                    </tr>
+                    <tr class="selezionata">
+                        <td>Alluvione</td>
+                        <td>Rischio Idraulico</td>
+                        <td>Liguria</td>
+                        <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
+                        <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-eye"></i> Anteprima</span></td>
+                    </tr>
+                    <tr>
+                        <td>Terremoto</td>
+                        <td>Rischio Tellurico</td>
+                        <td>Friuli Venezia Giulia</td>
+                        <td> <a href="" data-toggle="tooltip" title="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna">Allerta arancione, mercoledì 22 maggio...</a></td>
+                        <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-eye"></i> Anteprima</span></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- FINE TABELLA ELENCO MESSAGGI -->
+            <!-- INIZIO ANTEPRIMA MESSAGGI -->
+            <div class="col-5 table_invio text-right">
+                <h5>ANTEPRIMA MESSAGGIO</h5>
+                <div class="separatore20"></div>
+                <div class="row text-left">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>INFORMAZIONI GENERALI</h6><hr>
+                            </div>
+                        </div>
+                        <div class="row info_gen">
+                            <div class="col-6">
+                                <div class="titolino"><strong>NOME:</strong></div>
+                                <p>Alluvione Liguria</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="titolino"><strong>TIPOLOGIA:</strong></div>
+                                <p>Tipologia 1</p>
+                            </div>
+                        </div>
+                        <div class="separatore40"></div>
+                        <div class="row info_gen">
+                            <div class="col-4">
+                                <div class="titolino"><strong>DATA:</strong></div>
+                                <p>16/05/2019</p>
+                            </div>
+                            <div class="col-4">
+                                <div class="titolino"><strong>VALIDITA':</strong></div>
+                                <p>8 Ore</p>
+                            </div>
+                            <div class="col-4">
+                                <div class="titolino"><strong>SEVERITA':</strong></div>
+                                <p class="info_sev arancio"><strong>ARANCIONE</strong></p>
+                            </div>
+                        </div>
+                        <div class="separatore40"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>MESSAGGIO</h6><hr>
+                                <p> Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna</p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-6">
+                        <h6>AREA COINVOLTA</h6><hr>
+                        <iframe class="rounded-lg" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=8.371195793151857%2C44.21204888378048%2C8.442864418029787%2C44.23938832892952&amp;layer=mapnik"></iframe><br/>
+
+
+                    </div>
+
+                </div>
+                <!--PULSANTI-->
+                <div class="separatore40"></div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#conferma_validazione"><i class="fas fa-paper-plane"></i>  VALIDA ORA</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-warning btn-lg btn-block disabled"><i class="fas fa-times"></i>  REVOCA VALIDITA'</button>
+                    </div>
+
+                </div>
+                <div class="separatore20"></div>
+
+
+                <!-- MODALE CONFERMA e SALVA INTERNO AL MODALE PROCEDI-->
+                <div class="modal fade" id="conferma_validazione" tabindex="-1" role="dialog" aria-labelledby="conferma_validazione" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                        <div class="modal-content rounded-lg">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLongTitle">MESSAGGIO VALIDATO CORRETTAMENTE</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+            <!-- FINE TEMPLATE EDITOR -->
+        </div>
+    </div>
+</section>
+<!-- FINE CONTAINER -->
+<!-- INIZIO FOOTER -->
+<section id="footer">
+    <div class="footer">
+        <div class="row">
+            <div class="col"><img src="img/dpc_logo_png.png" alt="Logo Dipartimento Protezione Civile"/><img src="img/cima_logo_png.png" alt="Logo Cima Foundation"/><img src="img/acrotec_logo_png.png" alt="Logo Acrotec Foundation"/></div>
+            <div class="col text-center orario my-auto"><h5>VENERDI' 24 MAGGIO 2019 | 11:42:12</h5></div>
+            <div class="col text-right my-auto"><a>IT-Alert | Sottosistema Messaggistica Broadcast V1.0</a></div>
+        </div>
+    </div>
+</section>
+<!-- FINE FOOTER -->
+<!-- JS -->
+<script src="node_modules/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+<!-- TOOLTIP BOOTSTRAP -->
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<!-- MODAL BOOTSTRAP -->
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+
+
+</script>
+</body>
+</html>
+
