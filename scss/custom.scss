@@ -106,6 +106,25 @@ hr {
   padding-left: 5px;
 }
 
+/*LOGIN PAGE----------------------------------------*/
+.logo_login {
+  height: 85px;
+}
+
+.login_form {
+  background-color: #fff;
+  padding: 25px 10px 25px 10px;
+
+}
+
+.login_container {
+  background-color: #f7f7f9;
+  padding-top: 10%;
+  padding-left: $pad_25;
+  min-height: 797px;
+
+}
+
 /*MENU BAR-------------------------------------------*/
 .menu_icon {
   margin: auto 10px auto 0px;
@@ -217,7 +236,12 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   padding: 155px 31px;
   font-size: 12px;
   font-weight: 500;
+  margin-top: 10px;
   .titolo_prev {font-weight: 600}
+  }
+
+.phone_dis{
+  background-image: url("../img/phone_disable.png");
 }
 .btn-block {
   border-radius: 5px;
@@ -239,6 +263,22 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 
 .caratteri {
   font-size: 12px;
+}
+
+.add_page {
+  background-color: #f7f7f9;
+  padding-top: 55px;
+  color:grey;
+  margin-bottom: 27px;
+  margin-left: 5px;
+
+}
+
+
+.add_page:hover {
+  color: #727272;
+  background-color: #d8d8da;
+  cursor: pointer;
 }
 
 /*INVIO------------------------------------------*/
