@@ -215,6 +215,17 @@ h5 .green {background-color: $green;}
 .search {
   background-color: #fff;
 }
+.page_prev {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/phone2.png");
+  background-size: cover;
+  padding: 155px 31px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  .titolo_prev {font-weight: 600}
+}
 
 
 
@@ -361,17 +372,7 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   border: 2px solid darkgrey;
 }
 
-.page_prev {
-  width: 100%;
-  height: 400px;
-  background-image: url("../img/phone2.png");
-  background-size: cover;
-  padding: 155px 31px;
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: 10px;
-  .titolo_prev {font-weight: 600}
-}
+
 
 
 
