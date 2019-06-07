@@ -104,13 +104,16 @@ hr {
 .main_menu img {
   height: 65px;
 }
+.main_menu .nav-item {
+  font-size: 22px;
+}
 
 /*CONTAINER HOME---------------------------------------*/
 .barra_lat {
   background-color: #f7f7f9;
   padding-top: 35px;
   padding-left: 25px;
-  min-height: calc(100vh - (140px + 140px + 12px));
+  min-height: calc(100vh - (140px + 80px + 12px));
   /*min-height: 652px;*/
 }
 
@@ -199,12 +202,15 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 
 .page_prev {
   width: 100%;
-  height: 387px;
-  background-image: url("../img/phone.png");
+  height: 400px;
+  background-image: url("../img/phone2.png");
   background-size: cover;
-  padding: 55px 20px;
-  font-size: 14px;
+  padding: 155px 31px;
+  font-size: 12px;
   font-weight: 500;
+}
+.page_prev .titolo_prev {
+  font-weight: 600;
 }
 
 .btn-block {
@@ -231,6 +237,10 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 .selezionata {
   border-right: 5px solid #007bff;
   background-color: #d9e6f4;
+}
+
+.caratteri {
+  font-size: 12px;
 }
 
 /*INVIO------------------------------------------*/
@@ -271,15 +281,15 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 /*FOOTER ------------------------------------------*/
 .footer {
   background-color: #243d7d;
-  min-height: 140px;
+  min-height: 80px;
   color: #fff;
-  padding: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
   /*position: fixed;*/
   bottom: 0px;
   width: 100%;
 }
 .footer img {
-  height: 100px;
+  height: 70px;
 }
 
 .orario h5 {
@@ -291,6 +301,128 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
   border-bottom: none;
   border-right: 5px solid;
   border-right-color: #06c;
+}
+
+/*CSS SUPERVISIONE -----------------------*/
+.supervisione .top_bar, .supervisione .footer {
+  background-color: #e1740e;
+}
+.supervisione .nav-tabs .nav-item.show .nav-link,
+.supervisione .nav-tabs .nav-link.active {
+  color: #e1740e;
+  border-bottom-color: #e1740e;
+}
+.supervisione .nav-tabs.auto .nav-item {
+  width: 250px;
+}
+.supervisione .nav-tabs .nav-link:hover {
+  color: #e1740e;
+}
+
+.col_supervisione {
+  background-color: #f7f7f9;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-height: calc(100vh - (140px + 80px + 12px));
+  /*min-height: 652px;*/
+  margin: 20px 5px;
+}
+
+.tassello {
+  border: 4px solid green;
+  min-height: 192px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.tassello h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.collegamento {
+  height: 5px;
+  width: 60px;
+}
+
+.link_online {
+  background-color: green;
+}
+
+.link_offline {
+  background-color: orange;
+}
+
+.paddato {
+  padding: 110px 0 110px 0;
+}
+
+.mpls {
+  border: 4px solid green;
+  min-height: 648px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-top: 80%;
+}
+.mpls .fas {
+  color: grey;
+}
+
+.col-cbe .fas {
+  color: grey;
+}
+.col-cbe .fa-5x {
+  font-size: 4.7em;
+}
+
+.cbe {
+  min-height: 192px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+}
+.cbe h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.titolo_status {
+  background-color: #243d7d;
+  padding-right: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.mpls1234 {
+  min-height: 147px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+}
+.mpls1234 h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.mpls_link {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.titolo_link {
+  padding-top: 11px;
+}
+
+.blocco_collegamenti {
+  height: 150px;
+  margin-top: 15px;
+}
+
+.item-offline {
+  border: 4px solid orange;
+  background-color: #ffdfc1;
 }
 
 /*# sourceMappingURL=custom.css.map */

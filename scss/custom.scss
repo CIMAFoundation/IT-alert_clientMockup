@@ -18,7 +18,7 @@ $red: red;
 $pad_25:25px;
 $pad_35:35px;
 
-$h-footer: 140px;
+$h-footer: 80px;
 $h-header: 140px;
 
 
@@ -128,6 +128,7 @@ hr {
   img {
     height: 65px;
   }
+  .nav-item{font-size: 22px; }
 }
 
 
@@ -210,12 +211,13 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 
 .page_prev {
   width: 100%;
-  height: 387px;
-  background-image: url("../img/phone.png");
+  height: 400px;
+  background-image: url("../img/phone2.png");
   background-size: cover;
-  padding: 55px 20px;
-  font-size: 14px;
+  padding: 155px 31px;
+  font-size: 12px;
   font-weight: 500;
+  .titolo_prev {font-weight: 600}
 }
 .btn-block {
   border-radius: 5px;
@@ -233,6 +235,10 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 .selezionata {
   border-right: 5px solid #007bff;
   background-color: #d9e6f4;
+}
+
+.caratteri {
+  font-size: 12px;
 }
 
 /*INVIO------------------------------------------*/
@@ -275,12 +281,12 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   background-color: $deepblue;
   min-height: $h-footer;
   color: $white;
-  padding: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
   /*position: fixed;*/
   bottom: 0px;
   width: 100%;
   img {
-    height: 100px
+    height: 70px
   }
 }
 .orario h5{
@@ -295,7 +301,135 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   border-right-color: #06c;
 }
 
+/*CSS SUPERVISIONE -----------------------*/
 
+.supervisione {
+  .top_bar, .footer {
+    background-color: #e1740e;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #e1740e;
+    border-bottom-color: #e1740e;
+  }
+  .nav-tabs.auto .nav-item {
+    width: 250px;
+  }
+  .nav-tabs .nav-link:hover {
+    color: #e1740e;
+  }
+
+}
+
+.col_supervisione {
+  background-color: #f7f7f9;
+  padding-top: 15px;
+  padding-left: $pad_25;
+  padding-right: $pad_25;
+  min-height: calc(100vh - (#{$h-header} + #{$h-footer} + #{12px}));
+  /*min-height: 652px;*/
+  margin: 20px 5px;
+
+}
+
+.tassello {
+  border: 4px solid green;
+  min-height: 192px;
+  margin-top: 20px;
+  padding: 10px;
+
+  h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+}
+
+.collegamento {
+  height: 5px;
+  width: 60px;
+}
+
+.link_online {
+  background-color: green;
+}
+.link_offline {
+  background-color: $orange;
+}
+
+.paddato {
+  padding: 110px 0 110px 0;
+}
+
+.mpls {
+  border: 4px solid green;
+  min-height: 648px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-top: 80%;
+
+  .fas {
+    color: grey;
+  }
+}
+
+.col-cbe {
+      .fas {
+        color: grey;
+      }
+      .fa-5x {
+        font-size: 4.7em;
+      }
+}
+
+.cbe {
+  min-height: 192px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+
+  h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+}
+
+.titolo_status {
+  background-color: $deepblue;
+  padding-right: 10px;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+}
+
+
+
+.mpls1234 {
+  min-height: 147px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+  h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+}
+
+.mpls_link {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.titolo_link {padding-top: 11px}
+
+.blocco_collegamenti {height: 150px;
+margin-top: 15px}
+
+.item-offline {
+  border: 4px solid $orange;
+  background-color: #ffdfc1;
+}
 
 
 
