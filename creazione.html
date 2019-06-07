@@ -126,7 +126,7 @@
             <!-- FINE TABELLA TEMPLATE SIDEBAR -->
             <!-- INIZIO TEMPLATE EDITOR -->
             <div class="col-8 table_invio text-right">
-                <h5>EDITOR MESSAGGIO</h5>
+                <h5>EDITOR MODELLO</h5>
                 <div class="separatore20"></div>
                 <!--INFO GENERALI-->
                 <div class="text-left"><h6>INFORMAZIONI GENERALI</h6><hr></div>
@@ -134,39 +134,88 @@
                 <div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="formNome" placeholder="Alluvione Liguria">
+                            <input type="text" class="form-control form-filled" id="formNome" placeholder="Digita il nome del modello" value="Alluvione" >
                             <label for="formNome">Nome del Modello</label>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 ">
                             <div class="bootstrap-select-wrapper">
-                                <label>Tipologia:</label>
+                                <label>Status Messaggio:</label>
                                 <select title="Scegli un'opzione">
-                                    <option value="Value 1">Tipologia 1</option>
-                                    <option value="Value 2">Tipologia 2</option>
-                                    <option value="Value 3">Tipologia 3</option>
-                                    <option value="Value 4">Tipologia 4</option>
-                                    <option value="Value 5">Tipologia 5</option>
+                                    <option value="Value 1">Reale</option>
+                                    <option value="Value 2">Esercitazione</option>
+                                    <option value="Value 3">Sistema</option>
+                                    <option value="Value 4">Test</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-4">
-                            <input type="text" class="form-control" id="data" placeholder="16/05/2019">
+                            <div class="bootstrap-select-wrapper">
+                                <label>Tipologia Messaggio:</label>
+                                <select title="Scegli un'opzione">
+                                    <option value="Value 1">Allerta</option>
+                                    <option value="Value 2">Aggiornamento</option>
+                                    <option value="Value 3">Revoca</option>
+                                    <option value="Value 4">Riconoscimento</option>
+                                    <option value="Value 4">Errore</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <div class="bootstrap-select-wrapper select-filled">
+                                <label>Categoria Rischio:</label>
+                                <select title="Scegli un'opzione">
+                                    <option value="Value 1">Geologico</option>
+                                    <option value="Value 2">Meteorologico</option>
+                                    <option value="Value 3">Salvaguardia</option>
+                                    <option value="Value 4" selected="selected">Sicurezza</option>
+                                    <option value="Value 5">Recupero</option>
+                                    <option value="Value 6">Fuoco</option>
+                                    <option value="Value 7">Salute</option>
+                                    <option value="Value 8">Ambientale</option>
+                                    <option value="Value 9">Trasporti</option>
+                                    <option value="Value 10">Infrastrutture</option>
+                                    <option value="Value 11">CBRNE</option>
+                                    <option value="Value 12">Altro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <div class="bootstrap-select-wrapper">
+                                <label>Tipologia di Risposta:</label>
+                                <select title="Scegli un'opzione">
+                                    <option value="Value 1">Cercare Riparo</option>
+                                    <option value="Value 2">Evacuare</option>
+                                    <option value="Value 3">Preparare</option>
+                                    <option value="Value 4">Eseguire</option>
+                                    <option value="Value 5">Evitare</option>
+                                    <option value="Value 6">Monitorare</option>
+                                    <option value="Value 7">Valutare</option>
+                                    <option value="Value 8">AllClerr</option>
+                                    <option value="Value 9">Nessuna</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <input type="text" class="form-control" id="data" placeholder="Inserisci la data">
                             <label for="data">Data</label>
                         </div>
                         <div class="form-group col-4">
-                            <input type="text" class="form-control" id="validita" placeholder="8 Ore">
+                            <input type="text" class="form-control" id="validita" placeholder="Tempo di validità espresso in ore">
                             <label for="validita">Validità</label>
                         </div>
                         <div class="form-group col-4">
                             <div class="bootstrap-select-wrapper">
                                 <label>Severità:</label>
                                 <select title="Scegli un'opzione">
-                                    <option value="Value 1">Verde</option>
-                                    <option value="Value 2">Giallo</option>
-                                    <option value="Value 3">Arancione</option>
-                                    <option value="Value 4">Rossa</option>
+                                    <option value="Value 1">Estrema</option>
+                                    <option value="Value 2">Severa</option>
+                                    <option value="Value 3">Moderata</option>
+                                    <option value="Value 4">Minore</option>
+                                    <option value="Value 5">Sconosciuta</option>
                                 </select>
                             </div>
                         </div>
@@ -176,34 +225,52 @@
                 <div class="text-left"><h6>MESSAGGIO</h6><hr></div>
                 <div class="separatore20"></div>
                 <div class="row">
-                    <div class="col-8">
-                        <div class="form-group no-margin">
-                            <label for="exampleFormControlTextarea1">Inserisci il testo del messaggio</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna"></textarea>
+                    <div class="form-group col-12">
+                        <input type="text" class="form-control form-filled" id="titolo_msg" placeholder="Digita il titolo del messaggio" value="Alluvione in corso">
+                        <label for="data">Titolo Messaggio</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-group no-margin form-filled">
+                            <label for="exampleFormControlTextarea1">Testo Pagina 1</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Inserisci il testo del messaggio, sono disponibili 93 caratteri ogni pagina">Questo è un testo di prova per il messaggio di IT-alert ed è lungo esattamente tutti e 93 i caratteri disponibili</textarea>
                         </div>
+                        <span class="text-right caratteri">Caratteri Restanti: 0</span>
                     </div>
                     <div class="col-2">
-                        <div class="form-group">
-                             <input type="text" class="form-control" id="num_caratteri" placeholder="155">
-                                <label for="num_caratteri">Numero Caratteri</label>
+                        <div class="form-group no-margin">
+                            <label for="exampleFormControlTextarea1">Testo Pagina 2</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Inserisci il testo del messaggio, sono disponibili 93 caratteri ogni pagina"></textarea>
                         </div>
-                        <div class="form-group">
-                                <input type="text" class="form-control" id="num_pagine" placeholder="2">
-                                <label for="num_pagine">Numero Pagine</label>
-                        </div>
+                        <span class="text-right caratteri">Caratteri Restanti: 93</span>
+                    </div>
+
+                    <div class="col-2 rounded-lg add_page text-center">
+                        <i class="fas fa-plus fa-5x"></i><br>
+                        <h6>AGGIUNGI PAGINA</h6>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-2 text-center">
-                        <a>PAGINA 1</a>
+                        <!--<a>PAGINA 1</a>-->
                         <div class="page_prev text-left">
-                            <span>Allerta arancione, mercoledì 22 maggio, per rischio idraulico in Veneto. Allerta gialla per </span>
+                            <span class="titolo_prev">Alluvione in corso</span><br>
+                            <span>Questo è un testo di prova per il messaggio di IT-alert ed è lungo esattamente tutti e 93 i caratteri disponibili</span>
                         </div>
                     </div>
                     <div class="col-2 text-center">
-                        <a>PAGINA 2</a>
+                        <!--                        <a>PAGINA 2</a>-->
                         <div class="page_prev text-left">
-                            <span> rischio idrogeologico e idraulico in Veneto e in Emilia-Romagna</span>
+                            <span class="titolo_prev">Alluvione in corso</span><br>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <!--                        <a>NUOVA PAGINA</a>-->
+                        <div class="page_prev text-left phone_dis">
+                            <span class="titolo_prev"></span><br>
+                            <span></span>
                         </div>
                     </div>
                 </div>

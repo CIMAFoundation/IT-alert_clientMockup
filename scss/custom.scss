@@ -211,34 +211,13 @@ h5 .green {background-color: $green;}
 .form-control, .filter-option {
   background-color: #f7f7f9;
   }
-.search {background-color: #fff;}
-input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea, .form-group textarea {
-  border-radius: 10px;
-}
-.form-group {
-  margin-bottom: 2rem;
+
+.search {
+  background-color: #fff;
 }
 
-.no-margin {
-  margin-bottom: 0px;
-}
 
-.form-control:focus {
-  border: solid 2px rgba(0,123,255,.25) ;
-  transition: 0,7s;
-}
 
-.page_prev {
-  width: 100%;
-  height: 400px;
-  background-image: url("../img/phone2.png");
-  background-size: cover;
-  padding: 155px 31px;
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: 10px;
-  .titolo_prev {font-weight: 600}
-  }
 
 .phone_dis{
   background-image: url("../img/phone_disable.png");
@@ -332,6 +311,69 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 .orario h5{
   font-weight:600;
 }
+
+/* PERSONALIZZAZIONE CAMPI FORM---------------*/
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea, .form-group textarea {
+  border-radius: 10px;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.no-margin {
+  margin-bottom: 0px;
+}
+
+.form-control:focus {
+  border: solid 2px rgba(0,123,255,.25) ;
+  transition: 0,7s;
+}
+
+.form-filled {
+  border: solid 2px green !important;
+  border-radius: 10px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+  border-radius: 10px;
+  border: 2px solid darkgrey;
+}
+
+.select-filled {
+  .bootstrap-select .dropdown-toggle .filter-option {
+    border: 2px solid green;
+  }
+}
+
+.bootstrap-select-wrapper button .filter-option::after {
+  height: 0px;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  outline: none !important;
+  outline: none !important;
+  outline-offset: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea {
+  border: 2px solid darkgrey;
+}
+
+.page_prev {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/phone2.png");
+  background-size: cover;
+  padding: 155px 31px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+  .titolo_prev {font-weight: 600}
+}
+
+
 
 /*SOVRASCRIVE BOOTSTRAP ORIGINALE -----------------------*/
 
