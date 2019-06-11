@@ -191,6 +191,14 @@ hr {
   border-radius: 8px;
 }
 
+.modal h5 {
+  background-color: #06c;
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px 5px 5px;
+  border-radius: 8px;
+}
+
 h5 .green {
   background-color: green;
 }

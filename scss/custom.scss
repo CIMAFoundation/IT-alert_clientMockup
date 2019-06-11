@@ -234,6 +234,15 @@ cursor: no-drop;
 
 }
 
+.modal  h5 {
+    background-color: $blue;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px 5px 5px;
+    border-radius: 8px;
+  }
+
+
 h5 .green {background-color: $green;}
 
 
