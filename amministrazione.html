@@ -186,162 +186,169 @@
             </div>
             <!-- FINE PAGINE UTENTI - RUOLI - INGESTION -->
 
-            <!-- MODALE MODIFICA UTENTE -->
-            <div class="modal fade" id="user_mod" tabindex="-1" role="dialog" aria-labelledby="user_mod" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content rounded-lg">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLongTitle">MODIFICA UTENTE</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <img width="50%" class="rounded-circle" src="img/user_ph.png"/>
-                            <div class="separatore40"></div>
-                            <form>
-                                <div class="form-group">
-                                    <label for="user_name">Nome</label>
-                                    <input type="text" class="form-control" id="user_name" placeholder="Example input" value="Alessandro">
-                                </div>
-                                <div class="form-group">
-                                    <label for="user_surname">Cognome</label>
-                                    <input type="text" class="form-control" id="user_surname" placeholder="Another input" value="Casasola">
-                                </div>
-                                <div class="form-group">
-                                    <label for="user_mail">Mail</label>
-                                    <input type="text" class="form-control" id="user_mail" placeholder="Another input" value="casasola@acrotec.it">
-                                </div>
-                                <div class="form-group">
-                                    <label for="user_phone">Telefono</label>
-                                    <input type="text" class="form-control" id="user_phone" placeholder="Another input" value="+373471702828">
-                                </div>
-                                <div class="text-left">
-                                    <h6>Ruoli Assegnati</h6>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">Amministratore <span class="badge badge-primary">Amministratore</span></label>
-                                    </div>
-                                    <div class="form-check active">
-                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck2" checked="checked">
-                                        <label class="form-check-label" for="defaultCheck2">Sviluppatore <span class="badge badge-primary">Sviluppatore</span></label>
-                                    </div>
-                                    <div class="form-check active">
-                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck3" checked="checked">
-                                        <label class="form-check-label" for="defaultCheck3">Tester <span class="badge badge-primary">Tester</span></label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck4">
-                                        <label class="form-check-label" for="defaultCheck4">Responsabile Messaggio <span class="badge badge-primary">Responsabile Messaggio</span></label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="separatore20"></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
-                            <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- MODALE PROPRIETA' EXTERNAL WRAPPER -->
-            <div class="modal fade" id="ext_wrapp_mod" tabindex="-1" role="dialog" aria-labelledby="ext_wrapp_mod" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content rounded-lg">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLongTitle">PROPRIETA' EXTERNAL WRAPPER</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <img width="25%" class="rounded-circle" src="img/mydewetra_logo.png"/>
-                            <div class="separatore40"></div>
-                            <form>
-                                <div class="form-group">
-                                    <label for="user_name">Nome</label>
-                                    <input type="text" class="form-control" id="user_name" placeholder="Example input" value="MyDewetra">
-                                </div>
-                                <div class="text-left">
-                                    <p>Status messaggi in arrivo</p>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
-                                        <label class="custom-control-label" for="customRadioInline1">Validato <span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadioInline2">Creato <span class="badge badge-primary"><i class="fas fa-check"></i> Creato</span></label>
-                                    </div>
-                                </div>
-                                <div class="text-left">
-                                    <br>
-                                    <p>Template associati all'External Wrapper <strong>MyDewetra</strong></p>
-                                    <div class="text-right">
-                                    <button class="btn btn-success btn-xs btn-icon"><i class="fas fa-plus" style=""></i>AGGIUNGI UN TEMPLATE</button>
-                                    </div>
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col">Template</th>
-                                            <th scope="col">Severità</th>
-                                            <th scope="col">Azioni</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                            <td>Template 1</td>
-                                            <td><img src="img/sev_4.png" height="25"> Estrema</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template 2</td>
-                                            <td><img src="img/sev_3.png" height="25"> Severa</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template 3</td>
-                                            <td><img src="img/sev_1.png" height="25"> Minore</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template 4</td>
-                                            <td><img src="img/sev_4.png" height="25"> Estrema</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template 5</td>
-                                            <td><img src="img/unknow.png" height="25"> Sconosciuta</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Template 6</td>
-                                            <td><img src="img/sev_2.png" height="25"> Moderata</td>
-                                            <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="separatore20"></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
-                            <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
 
             <!-- FINE PAGINA AMMINISTRAZIONE -->
         </div>
     </div>
 </section>
 <!-- FINE CONTAINER -->
+
+<!--=================================
+                MODALI
+==================================-->
+
+    <!-- MODALE MODIFICA UTENTE -->
+    <div class="modal fade" id="user_mod" tabindex="-1" role="dialog" aria-labelledby="user_mod" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-lg">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">MODIFICA UTENTE</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img width="50%" class="rounded-circle" src="img/user_ph.png"/>
+                    <div class="separatore40"></div>
+                    <form>
+                        <div class="form-group">
+                            <label for="user_name">Nome</label>
+                            <input type="text" class="form-control" id="user_name" placeholder="Example input" value="Alessandro">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_surname">Cognome</label>
+                            <input type="text" class="form-control" id="user_surname" placeholder="Another input" value="Casasola">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_mail">Mail</label>
+                            <input type="text" class="form-control" id="user_mail" placeholder="Another input" value="casasola@acrotec.it">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_phone">Telefono</label>
+                            <input type="text" class="form-control" id="user_phone" placeholder="Another input" value="+373471702828">
+                        </div>
+                        <div class="text-left">
+                            <h6>Ruoli Assegnati</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Amministratore <span class="badge badge-primary">Amministratore</span></label>
+                            </div>
+                            <div class="form-check active">
+                                <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck2" checked="checked">
+                                <label class="form-check-label" for="defaultCheck2">Sviluppatore <span class="badge badge-primary">Sviluppatore</span></label>
+                            </div>
+                            <div class="form-check active">
+                                <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck3" checked="checked">
+                                <label class="form-check-label" for="defaultCheck3">Tester <span class="badge badge-primary">Tester</span></label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck4">
+                                <label class="form-check-label" for="defaultCheck4">Responsabile Messaggio <span class="badge badge-primary">Responsabile Messaggio</span></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="separatore20"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODALE PROPRIETA' EXTERNAL WRAPPER -->
+    <div class="modal fade" id="ext_wrapp_mod" tabindex="-1" role="dialog" aria-labelledby="ext_wrapp_mod" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-lg">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">PROPRIETA' EXTERNAL WRAPPER</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img width="25%" class="rounded-circle" src="img/mydewetra_logo.png"/>
+                    <div class="separatore40"></div>
+                    <form>
+                        <div class="form-group">
+                            <label for="user_name">Nome</label>
+                            <input type="text" class="form-control" id="user_name" placeholder="Example input" value="MyDewetra">
+                        </div>
+                        <div class="text-left">
+                            <p>Status messaggi in arrivo</p>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+                                <label class="custom-control-label" for="customRadioInline1">Validato <span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Creato <span class="badge badge-primary"><i class="fas fa-check"></i> Creato</span></label>
+                            </div>
+                        </div>
+                        <div class="text-left">
+                            <br>
+                            <p>Template associati all'External Wrapper <strong>MyDewetra</strong></p>
+                            <div class="text-right">
+                                <button class="btn btn-success btn-xs btn-icon"><i class="fas fa-plus" style=""></i>AGGIUNGI UN TEMPLATE</button>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Template</th>
+                                    <th scope="col">Severità</th>
+                                    <th scope="col">Azioni</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <td>Template 1</td>
+                                <td><img src="img/sev_4.png" height="25"> Estrema</td>
+                                <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Template 2</td>
+                                    <td><img src="img/sev_3.png" height="25"> Severa</td>
+                                    <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Template 3</td>
+                                    <td><img src="img/sev_1.png" height="25"> Minore</td>
+                                    <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Template 4</td>
+                                    <td><img src="img/sev_4.png" height="25"> Estrema</td>
+                                    <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Template 5</td>
+                                    <td><img src="img/unknow.png" height="25"> Sconosciuta</td>
+                                    <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Template 6</td>
+                                    <td><img src="img/sev_2.png" height="25"> Moderata</td>
+                                    <td><button class="btn btn-sm btn-warning"><i class="fas fa-times"></i> Elimina</button></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="separatore20"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-times"></i> Annulla</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check"></i> Salva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 <!-- INIZIO FOOTER -->
 <section id="footer">
     <div class="footer">
