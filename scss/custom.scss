@@ -24,7 +24,9 @@ $h-header: 140px;
 
 
 
-/*GENERALI----------------------------------*/
+/*===========================
+           GENERALI
+=============================*/
 
 .container-fluid {
   padding-left: $pad_25;
@@ -40,6 +42,8 @@ body {
   font-size: 15px
 }
 
+.separatore5 {padding-top: 5px}
+
 .separatore20 {padding-top: 20px}
 
 .separatore40 {padding-top: 40px}
@@ -50,7 +54,15 @@ hr {
   border-top: 2px solid rgba(0,0,0,.1);
 }
 
-/*TOP BAR - LOGIN BAR------------------------------*/
+.btn.disabled, .btn:disabled {
+cursor: no-drop;
+} /*elimina il cursore dai pulsanti disabilitati*/
+
+
+/*===========================
+     TOP BAR - LOGIN BAR
+=============================*/
+
 
 .top_bar {
   background-color: $deepblue;
@@ -73,9 +85,7 @@ hr {
   }
 }
 
-.badge-warning {
-  background-color: $ita_orange;
-}
+
 
 .fa-15x {
   font-size: 1.5em;
@@ -135,16 +145,17 @@ hr {
     -webkit-transform: rotate(45deg);
     -webkit-transform-origin: 50% 50%;
     box-shadow: inset 4px 4px 5px 0px #e4e4e4;
-  }
+  } /*inserisce triangolo sotto menu*/
 
 
 
 }
 
 
+/*===========================
+           LOGIN PAGE
+=============================*/
 
-
-/*LOGIN PAGE----------------------------------------*/
 .logo_login {
   height: 85px;
 }
@@ -163,7 +174,10 @@ hr {
 
 }
 
-/*MENU BAR-------------------------------------------*/
+/*===========================
+          MENU BAR
+=============================*/
+
 .menu_icon {
   margin: auto 10px auto 0px;
 }
@@ -193,7 +207,9 @@ hr {
 
 
 
-/*CONTAINER HOME---------------------------------------*/
+/*===========================
+       CONTAINER HOME
+=============================*/
 
 
 .barra_lat {
@@ -220,14 +236,9 @@ hr {
 
 h5 .green {background-color: $green;}
 
-/*TABELLA -------------------------------------------*/
-.table td, .table th {
 
-  padding: 0.7em;
 
-}
-
-/* SEVERITA--------------------------------------------*/
+/* SEVERITA
 .sev {  font-weight: 800;}
 
 .arancio {  color: $orange;}
@@ -240,9 +251,13 @@ h5 .green {background-color: $green;}
   .arancio{border-color: $orange}
   .verde{border-color: $green}
   .rossa{border-color: $red}
-}
+} */
 
-/*TEMPLATE EDITOR & CRAZIONE MSG------------------------------------------*/
+
+/*===================================
+    TEMPLATE EDITOR & CRAZIONE MSG
+=====================================*/
+
 .titolo_modelli {
   display: flex;
   justify-content: space-between;
@@ -267,9 +282,6 @@ h5 .green {background-color: $green;}
   margin-top: 10px;
   .titolo_prev {font-weight: 700}
 }
-
-
-
 
 .phone_dis{
   background-image: url("../img/phone_disable.png");
@@ -300,8 +312,9 @@ h5 .green {background-color: $green;}
   background-color: #f7f7f9;
   padding-top: 55px;
   color:grey;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   margin-left: 5px;
+  margin-top: 15px;
 
 }
 
@@ -312,11 +325,9 @@ h5 .green {background-color: $green;}
   cursor: pointer;
 }
 
-/*INVIO------------------------------------------*/
-
-
-/*AMMINISTRAZIONE-------------------------------*/
-
+/*===================================
+           AMMINISTRAZIONE
+=====================================*/
 .menu_amm .nav-tabs {
   background-color: transparent;
 }
@@ -346,7 +357,9 @@ h5 .green {background-color: $green;}
 
 
 
-/*FOOTER ------------------------------------------*/
+/*===================================
+           FOOTER
+=====================================*/
 
 .footer {
   background-color: $deepblue;
@@ -364,7 +377,10 @@ h5 .green {background-color: $green;}
   font-weight:600;
 }
 
-/* PERSONALIZZAZIONE CAMPI FORM---------------*/
+/*===================================
+           CAMPI FORM CUSTOM
+=====================================*/
+
 input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea, .form-group textarea {
   border-radius: 10px;
 }
@@ -413,17 +429,40 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
   border: 2px solid darkgrey;
 }
 
+textarea {
+  resize:none;
+margin-top: 10px}
 
 
 
 
-/*SOVRASCRIVE BOOTSTRAP ORIGINALE -----------------------*/
+
+/*===================================
+    OVERRIDE BOOTSTRAP ORIGINALE
+=====================================*/
 
 .nav-tabs.nav-tabs-vertical .nav-item.show .nav-link, .nav-tabs.nav-tabs-vertical .nav-link.active {
   border-bottom: none;
   border-right: 5px solid;
   border-right-color: #06c;
 }
+
+.badge-warning {
+  background-color: $ita_orange;
+}
+
+.table td, .table th {
+
+  padding: 0.7em;
+
+}
+
+
+
+
+
+
+
 
 /*CSS SUPERVISIONE -----------------------*/
 
@@ -554,8 +593,6 @@ margin-top: 15px}
   border: 4px solid $orange;
   background-color: #ffdfc1;
 }
-
-
 
 
 

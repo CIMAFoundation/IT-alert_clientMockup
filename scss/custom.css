@@ -1,4 +1,6 @@
-/*GENERALI----------------------------------*/
+/*===========================
+           GENERALI
+=============================*/
 .container-fluid {
   padding-left: 25px;
   padding-right: 25px;
@@ -11,6 +13,10 @@ body {
 
 .tooltip {
   font-size: 15px;
+}
+
+.separatore5 {
+  padding-top: 5px;
 }
 
 .separatore20 {
@@ -27,7 +33,14 @@ hr {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/*TOP BAR - LOGIN BAR------------------------------*/
+.btn.disabled, .btn:disabled {
+  cursor: no-drop;
+}
+
+/*elimina il cursore dai pulsanti disabilitati*/
+/*===========================
+     TOP BAR - LOGIN BAR
+=============================*/
 .top_bar {
   background-color: #243d7d;
   height: 55px;
@@ -47,10 +60,6 @@ hr {
 .top_bar h4.badge-primary {
   border: solid;
   border-width: 2px;
-}
-
-.badge-warning {
-  background-color: #e1740e;
 }
 
 .fa-15x {
@@ -83,6 +92,9 @@ hr {
   padding-left: 5px;
 }
 
+.main_menu {
+  /*inserisce triangolo sotto menu*/
+}
 .main_menu .nav-tabs .nav-link {
   padding: 0 35px 0 35px;
 }
@@ -107,7 +119,9 @@ hr {
   box-shadow: inset 4px 4px 5px 0px #e4e4e4;
 }
 
-/*LOGIN PAGE----------------------------------------*/
+/*===========================
+           LOGIN PAGE
+=============================*/
 .logo_login {
   height: 85px;
 }
@@ -124,7 +138,9 @@ hr {
   min-height: 797px;
 }
 
-/*MENU BAR-------------------------------------------*/
+/*===========================
+          MENU BAR
+=============================*/
 .menu_icon {
   margin: auto 10px auto 0px;
 }
@@ -152,7 +168,9 @@ hr {
   font-size: 22px;
 }
 
-/*CONTAINER HOME---------------------------------------*/
+/*===========================
+       CONTAINER HOME
+=============================*/
 .barra_lat {
   background-color: #f7f7f9;
   padding-top: 35px;
@@ -167,10 +185,9 @@ hr {
 }
 .table_invio h5 {
   background-color: #06c;
-  padding-right: 10px;
   color: white;
   font-weight: 600;
-  padding: 5px;
+  padding: 5px 10px 5px 5px;
   border-radius: 8px;
 }
 
@@ -178,43 +195,23 @@ h5 .green {
   background-color: green;
 }
 
-/*TABELLA -------------------------------------------*/
-.table td, .table th {
-  padding: 0.7em;
-}
+/* SEVERITA
+.sev {  font-weight: 800;}
 
-/* SEVERITA--------------------------------------------*/
-.sev {
-  font-weight: 800;
-}
+.arancio {  color: $orange;}
 
-.arancio {
-  color: orange;
-}
+.verde {  color: $green;}
 
-.verde {
-  color: green;
-}
+.rossa {  color: $red;}
 
-.rossa {
-  color: red;
-}
-
-.td_sev, .info_sev {
-  border-right: solid;
-  border-width: 15px;
-}
-.td_sev .arancio, .info_sev .arancio {
-  border-color: orange;
-}
-.td_sev .verde, .info_sev .verde {
-  border-color: green;
-}
-.td_sev .rossa, .info_sev .rossa {
-  border-color: red;
-}
-
-/*TEMPLATE EDITOR & CRAZIONE MSG------------------------------------------*/
+.td_sev, .info_sev { border-right: solid; border-width: 15px;
+  .arancio{border-color: $orange}
+  .verde{border-color: $green}
+  .rossa{border-color: $red}
+} */
+/*===================================
+    TEMPLATE EDITOR & CRAZIONE MSG
+=====================================*/
 .titolo_modelli {
   display: flex;
   justify-content: space-between;
@@ -280,8 +277,9 @@ h5 .green {
   background-color: #f7f7f9;
   padding-top: 55px;
   color: grey;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   margin-left: 5px;
+  margin-top: 15px;
 }
 
 .add_page:hover {
@@ -290,8 +288,9 @@ h5 .green {
   cursor: pointer;
 }
 
-/*INVIO------------------------------------------*/
-/*AMMINISTRAZIONE-------------------------------*/
+/*===================================
+           AMMINISTRAZIONE
+=====================================*/
 .menu_amm .nav-tabs {
   background-color: transparent;
 }
@@ -325,7 +324,9 @@ h5 .green {
   background-color: red;
 }
 
-/*FOOTER ------------------------------------------*/
+/*===================================
+           FOOTER
+=====================================*/
 .footer {
   background-color: #243d7d;
   min-height: 80px;
@@ -343,7 +344,9 @@ h5 .green {
   font-weight: 600;
 }
 
-/* PERSONALIZZAZIONE CAMPI FORM---------------*/
+/*===================================
+           CAMPI FORM CUSTOM
+=====================================*/
 input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], textarea, .form-group textarea {
   border-radius: 10px;
 }
@@ -391,11 +394,26 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
   border: 2px solid darkgrey;
 }
 
-/*SOVRASCRIVE BOOTSTRAP ORIGINALE -----------------------*/
+textarea {
+  resize: none;
+  margin-top: 10px;
+}
+
+/*===================================
+    OVERRIDE BOOTSTRAP ORIGINALE
+=====================================*/
 .nav-tabs.nav-tabs-vertical .nav-item.show .nav-link, .nav-tabs.nav-tabs-vertical .nav-link.active {
   border-bottom: none;
   border-right: 5px solid;
   border-right-color: #06c;
+}
+
+.badge-warning {
+  background-color: #e1740e;
+}
+
+.table td, .table th {
+  padding: 0.7em;
 }
 
 /*CSS SUPERVISIONE -----------------------*/

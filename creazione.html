@@ -14,6 +14,8 @@
     <!--<script src="./bootstrap-italia.min.js"></script>-->
     <!-- CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- custom CSS -->
     <link rel="stylesheet" href="scss/custom.css">
     <!-- Font Awesome Icon-->
@@ -72,7 +74,7 @@
 <!-- FINE MENU BAR -->
 <!-- INIZIO CONTAINER -->
 <section id="content">
-    <div class="container-fluid">
+    <div class="container-fluid animated fadeIn">
         <div class="row">
             <!-- INIZIO TABELLA TEMPLATE SIDEBAR -->
             <div class="col-4 barra_lat">
@@ -232,15 +234,17 @@
                 </div>
                 <div class="row">
                     <div class="col-2">
-                        <div class="form-group no-margin form-filled">
+                        <div class="form-group no-margin ">
                             <label for="exampleFormControlTextarea1">Testo Pagina 1</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Inserisci il testo del messaggio, sono disponibili 93 caratteri ogni pagina">Questo è un testo di prova per il messaggio di IT-alert ed è lungo esattamente tutti e 93 i caratteri disponibili</textarea>
+                            <div class="separatore5"></div>
+                            <textarea class="form-control form-filled" id="exampleFormControlTextarea1" rows="7" placeholder="Inserisci il testo del messaggio, sono disponibili 93 caratteri ogni pagina">Questo è un testo di prova per il messaggio di IT-alert ed è lungo esattamente tutti e 93 i caratteri disponibili</textarea>
                         </div>
                         <span class="text-right caratteri">Caratteri Restanti: 0</span>
                     </div>
                     <div class="col-2">
                         <div class="form-group no-margin">
                             <label for="exampleFormControlTextarea1">Testo Pagina 2</label>
+                            <div class="separatore5"></div>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Inserisci il testo del messaggio, sono disponibili 93 caratteri ogni pagina"></textarea>
                         </div>
                         <span class="text-right caratteri">Caratteri Restanti: 93</span>
