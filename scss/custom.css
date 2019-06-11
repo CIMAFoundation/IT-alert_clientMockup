@@ -273,7 +273,7 @@ h5 .green {
 }
 
 .selezionata {
-  border-right: 5px solid #007bff;
+  border-right: 5px solid #06c;
   background-color: #d9e6f4;
 }
 
@@ -422,6 +422,10 @@ textarea {
 
 .table td, .table th {
   padding: 0.7em;
+}
+
+.badge-primary, .btn-primary {
+  background-color: #06c;
 }
 
 /*CSS SUPERVISIONE -----------------------*/
