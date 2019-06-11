@@ -10,6 +10,7 @@ $deepblue: #243d7d;
 $ita_orange: #e1740e;
 $white: #fff;
 $black: #111;
+$blue: #06c;
 
 $orange: orange;
 $green: green;
@@ -31,7 +32,7 @@ $h-header: 140px;
 }
 
 body {
-  font-weight: 500;
+  font-weight: 400;
   min-height: 100vh;
 }
 
@@ -106,6 +107,43 @@ hr {
   padding-left: 5px;
 }
 
+.main_menu{
+
+  .nav-tabs .nav-link{
+    padding: 0 35px 0 35px;
+  }
+
+.nav-tabs .nav-link.active {
+
+  border-bottom-color: #06c;
+  color: #fff;
+  cursor: inherit;
+  background-color: #06c;
+
+}
+  .nav-link.active:after{
+
+    background: #fff;
+    border-width: 0px 0px 0 0;
+    bottom: -15px;
+    content: " ";
+    display: block;
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    z-index: 99;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    box-shadow: inset 4px 4px 5px 0px #e4e4e4;
+  }
+
+
+
+}
+
+
+
+
 /*LOGIN PAGE----------------------------------------*/
 .logo_login {
   height: 85px;
@@ -134,6 +172,7 @@ hr {
   &-tabs {
     min-height: 95px;
     border-bottom-width: 0;
+    overflow: visible;
   }
   &-link.active {
     border-width: 4px;
@@ -144,6 +183,8 @@ hr {
   border-bottom-color: #dfe4f2;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+  position: relative;
+  z-index: 20;
   img {
     height: 65px;
   }
@@ -173,6 +214,7 @@ hr {
     color: white;
     font-weight: 600;
     padding: 5px;
+    border-radius: 8px;
   }
 
 }
@@ -224,7 +266,7 @@ h5 .green {background-color: $green;}
   font-size: 12px;
   font-weight: 500;
   margin-top: 10px;
-  .titolo_prev {font-weight: 600}
+  .titolo_prev {font-weight: 700}
 }
 
 
