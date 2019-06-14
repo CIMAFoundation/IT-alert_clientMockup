@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IT-alert | APPLICAZIONE SUPERVISIONE</title>
+
+    <!--script-->
+    <script>window.__PUBLIC_PATH__ = '/appdemo/node_modules/bootstrap-italia/dist/fonts'</script> <!---- CAMBIARE RADICE ---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <!--<script src="./bootstrap-italia.min.js"></script>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="scss/custom.css">
+    <!-- Font Awesome Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body class="supervisione">
+<!-- INIZIO TOP BAR -->
+<section id="header" class="">
+    <div class="top_bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                <p>IT-alert | APPLICAZIONE SUPERVISIONE</p>
+                </div>
+                <div class="col text-center">
+                    <h4><span class="badge badge-primary">CBE-1</span></h4>
+                </div>
+                <div class="col text-right">
+                    <p><i class="fas fa-user-circle fa-15x"></i><a>Ajieje Brazov </a><!-- <span class="font-italic ruolo dropdown-toggle">Responsabile Messaggio</span>--></p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Amministratore
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Amministratore</a>
+                        <a class="dropdown-item" href="#">Sviluppatore</a>
+                        <a class="dropdown-item" href="#">Tester</a>
+                        <a class="dropdown-item" href="#">Responsabile Messaggio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FINE TOP BAR -->
+<!-- INIZIO MENU BAR -->
+<section id="menu_bar">
+    <div class="main_menu shadow-sm">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="img/logo_sito_it_alert_esteso3X2.jpg" />
+                <ul class="nav nav-tabs nav-tabs-icon-text auto">
+                    <li class="nav-item"><a class="nav-link" href="status_supervisione.html"><i class="fas fa-project-diagram fa-15x menu_icon"></i>Status</a></li>
+                    <li class="nav-item"><a class="nav-link active" href=""><i class="fas fa-chart-bar fa-15x menu_icon"></i>Report Istanze</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- FINE MENU BAR -->
+<!-- INIZIO CONTAINER -->
+<section id="content">
+    <div class="container-fluid">
+        <div class="separatore20"></div>
+        <div class="row">
+                <div class="col-12 rounded-lg bg-grey filtro">
+                    <!-- INIZIO FILTRO TOP BAR -->
+
+                        <h4><i class="fas fa-filter"></i> FILTRA MESSAGGI</h4>
+                        <div class="form-check filtro-orizz">
+                            <input class="form-check-input" type="checkbox" value="validato" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">Validato <span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></label>
+                        </div>
+                        <div class="form-check filtro-orizz">
+                            <input class="form-check-input" type="checkbox" value="invio_p" id="defaultCheck3">
+                            <label class="form-check-label" for="defaultCheck3">Invio Parziale <span class="badge badge-warning"><i class="fas fa-satellite-dish"></i> Invio Parziale</span></label>
+                        </div>
+                        <div class="form-check filtro-orizz">
+                            <input class="form-check-input" type="checkbox" value="inviato" id="defaultCheck4">
+                            <label class="form-check-label" for="defaultCheck4">Inviato <span class="badge badge-dark"><i class="fas fa-sign-in-alt"></i> Inviato</span></label>
+                        </div>
+                        <div class="form-check filtro-orizz">
+                            <input class="form-check-input" type="checkbox" value="creato" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">Concluso <span class="badge badge-secondary"><i class="fas fa-box"></i> Concluso</span></label>
+                        </div>
+
+                    <!-- FINE FILTRO SIDEBAR -->
+                </div>
+            <!-- INIZIO TABELLA INVII -->
+            <div class="col-12">
+                <table class="table table-striped tabella_report">
+                    <thead>
+                    <tr>
+                        <th scope="col">Nome &#9662</th>
+                        <th scope="col">Status &#9662</th>
+                        <th scope="col">Tipo di Rischio &#9662</th>
+                        <th scope="col">Periodo di Validità &#9662</th>
+                        <th scope="col">Creatore &#9662</th>
+                        <th scope="col">Informazioni</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Rischio Idraulico Veneto</td>
+                        <td><span class="badge badge-warning"><i class="fas fa-satellite-dish"></i> Invio Parziale</span></td>
+                        <td>Geologico</td>                        <td>8 Ore</td>
+                        <td>Daniele Debernardi<br><small><i>Responsabile Messaggio</i></small></td>
+                        <td class="">
+                            <table class="tabella_cbc">
+                                <tr class="tr_rosso">
+                                    <td><img width="50px" class="" src="img/logo_tim.png"/><strong>CBC TIM</strong></td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>--</td>
+                                </tr>
+                                <tr class="tr_verde">
+                                    <td><strong><img width="50px" class="" src="img/logo_vodafone.png"/>CBC VODAFONE</strong></td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>12/05/19 15:21</td>
+                                </tr>
+                                <tr class="tr_rosso">
+                                    <td><strong><img width="50px" class="" src="img/logo_wind-3.png"/>CBC TRE</td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>--</td>
+                                </tr>
+                                <tr class="tr_last tr_verde">
+                                    <td><strong><img width="50px" class="" src="img/logo_iliad.png"/>CBC ILIAD</td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>12/05/19 15:21</td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rischio Idraulico Veneto</td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-box"></i> Concluso</span></td>
+                        <td>Geologico</td>
+                        <td>8 Ore</td>
+                        <td>Daniele Debernardi<br><small><i>Responsabile Messaggio</i></small></td>
+                        <td class=""><button class="btn btn-primary"><i class="fas fa-clipboard-list"></i>   Visualizza Report Completo</button></td>
+                    <tr>
+                        <td>Rischio Idraulico Veneto</td>
+                        <td><span class="badge badge-success"><i class="fas fa-paper-plane"></i> Validato</span></td>
+                        <td>Geologico</td>                        <td>8 Ore</td>
+                        <td><img width="30px" class="rounded-circle" src="img/mydewetra_logo.png"/> MyDewetra<br><small><i>External Wrapper</i></small></td>
+                        <td class=""><strong>Data Validazione:</strong> 12/05/2019<br><strong>Utente Validatore:</strong> MyDewetra <small><i>External Wrapper</i></small><br><strong>Tempo Residuo:</strong> 2 Ore 22 Minuti </td>
+                    </tr>
+                    <tr>
+                        <td>Rischio Idraulico Veneto</td>
+                        <td><span class="badge badge-dark"><i class="fas fa-sign-in-alt"></i> Inviato</span></td>
+                        <td>Geologico</td>                        <td>8 Ore</td>
+                        <td>Daniele Debernardi<br><small><i>Responsabile Messaggio</i></small></td>
+                        <td class="">
+                            <table class="tabella_cbc">
+                                <tr class="tr_verde">
+                                    <td><img width="50px" class="" src="img/logo_tim.png"/><strong>CBC TIM</strong></td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>--</td>
+                                </tr>
+                                <tr class="tr_verde">
+                                    <td><strong><img width="50px" class="" src="img/logo_vodafone.png"/>CBC VODAFONE</strong></td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>12/05/19 15:21</td>
+                                </tr>
+                                <tr class="tr_verde">
+                                    <td><strong><img width="50px" class="" src="img/logo_wind-3.png"/>CBC TRE</td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>--</td>
+                                </tr>
+                                <tr class="tr_last tr_verde">
+                                    <td><strong><img width="50px" class="" src="img/logo_iliad.png"/>CBC ILIAD</td>
+                                    <td><strong>Data Invio:</strong>12/05/19 15:21</td>
+                                    <td><strong>Data Conferma:</strong>12/05/19 15:21</td>
+                                </tr>
+
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rischio Idraulico Veneto</td>
+                        <td><span class="badge badge-secondary"><i class="fas fa-box"></i> Concluso</span></td>
+                        <td>Geologico</td>
+                        <td>8 Ore</td>
+                        <td>Daniele Debernardi<br><small><i>Responsabile Messaggio</i></small></td>
+                        <td class=""><button class="btn btn-primary"><i class="fas fa-clipboard-list"></i>   Visualizza Report Completo</button></td>
+                    <tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- FINE TABELLA INVII -->
+        </div>
+
+    </div>
+</section>
+<!-- FINE CONTAINER -->
+<!-- INIZIO FOOTER -->
+<section id="footer">
+    <div class="footer">
+        <div class="row">
+            <div class="col"><img src="img/dpc_logo_png.png" alt="Logo Dipartimento Protezione Civile"/><img src="img/cima_logo_png.png" alt="Logo Cima Foundation"/><img src="img/acrotec_logo_png.png" alt="Logo Acrotec Foundation"/></div>
+            <div class="col text-center orario my-auto"><h5>VENERDI' 24 MAGGIO 2019 | 11:42:12</h5></div>
+            <div class="col text-right my-auto"><a>IT-Alert | Sottosistema Messaggistica Broadcast V1.0</a></div>
+        </div>
+    </div>
+</section>
+<!-- FINE FOOTER -->
+<!-- JS -->
+<script src="node_modules/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+<!-- TOOLTIP BOOTSTRAP -->
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>

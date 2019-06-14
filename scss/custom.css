@@ -428,20 +428,60 @@ textarea {
   background-color: #06c;
 }
 
-/*CSS SUPERVISIONE -----------------------*/
+/* ==================================
+=====================================
+===========CSS SUPERVISIONE =========
+=====================================
+======================================*/
 .supervisione .top_bar, .supervisione .footer {
   background-color: #e1740e;
 }
 .supervisione .nav-tabs .nav-item.show .nav-link,
-.supervisione .nav-tabs .nav-link.active {
-  color: #e1740e;
-  border-bottom-color: #e1740e;
-}
 .supervisione .nav-tabs.auto .nav-item {
   width: 250px;
 }
 .supervisione .nav-tabs .nav-link:hover {
   color: #e1740e;
+}
+.supervisione .nav-tabs .nav-link.active {
+  border-bottom-color: orange;
+  background-color: orange;
+  color: #fff;
+}
+.supervisione .bg-grey {
+  background-color: #f7f7f9;
+}
+.supervisione .filtro {
+  padding: 15px;
+  display: flex;
+  align-items: baseline;
+}
+.supervisione .filtro-orizz {
+  margin-left: 35px;
+}
+.supervisione .tabella_report td {
+  vertical-align: middle;
+}
+.supervisione .tabella_cbc td {
+  padding: 0.2em 0.8em 0.2em 0.8em;
+}
+.supervisione .tr_last td {
+  border-bottom: 0px;
+}
+.supervisione .tr_verde {
+  border-left: solid 8px #008758;
+}
+.supervisione .tr_rosso {
+  border-left: solid 8px #e1740e;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #e1740e;
+  border-color: #e1740e;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin-top: 10px;
 }
 
 .col_supervisione {

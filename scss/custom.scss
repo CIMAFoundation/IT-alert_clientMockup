@@ -478,24 +478,70 @@ margin-top: 10px}
 
 
 
-/*CSS SUPERVISIONE -----------------------*/
+/* ==================================
+=====================================
+===========CSS SUPERVISIONE =========
+=====================================
+======================================*/
 
 .supervisione {
   .top_bar, .footer {
     background-color: #e1740e;
   }
   .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link.active {
-    color: #e1740e;
-    border-bottom-color: #e1740e;
-  }
+
   .nav-tabs.auto .nav-item {
     width: 250px;
   }
   .nav-tabs .nav-link:hover {
     color: #e1740e;
   }
+  .nav-tabs .nav-link.active {
+    border-bottom-color: orange;
+    background-color: orange;
+    color: #fff;
+  }
+  .bg-grey {
+    background-color: #f7f7f9;
+  }
 
+  .filtro {
+    padding: 15px ;
+    display: flex;
+    align-items: baseline;
+  }
+  .filtro-orizz{
+    margin-left: 35px;
+  }
+
+  .tabella_report td {
+    vertical-align: middle;
+  }
+
+  .tabella_cbc td {
+    padding: 0.2em 0.8em 0.2em 0.8em;
+    }
+
+  .tr_last td {
+    border-bottom: 0px;
+  }
+
+  .tr_verde {
+      border-left: solid 8px #008758;
+  }
+  .tr_rosso {
+    border-left: solid 8px #e1740e;;
+  }
+
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #e1740e;
+  border-color: #e1740e;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  margin-top: 10px;
 }
 
 .col_supervisione {
