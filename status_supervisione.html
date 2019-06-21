@@ -71,151 +71,210 @@
 <section id="content">
     <div class="container-fluid">
         <div class="row">
-            <!-- INIZIO COLONNA MPLS -->
-            <div class="col-6">
-                    <div class="col_supervisione rounded-lg">
-                        <h5 class="text-right titolo_status">DIPARTIMENTO DI PROTEZIONE CIVILE</h5>
-                        <div class="row">
-                            <!--COLONNA USER-->
-                            <div class="col-3">
-                                <div class="tassello rounded-lg text-center">
-                                    <img width="50%" class="rounded-circle" src="img/mydewetra_logo.png"/>
-                                    <h3>MyDewetra</h3>
-                                    <span class="badge badge-success">ONLINE</span>
-                                </div>
-                                <div class="tassello rounded-lg text-center">
-                                    <img width="50%" class="rounded-circle" src="img/SiAM_logo.png"/>
-                                    <h3>SiAM</h3>
-                                    <span class="badge badge-success">ONLINE</span>
-                                </div>
-                                <div class="tassello rounded-lg text-center item-offline">
-                                    <img width="50%" class="rounded-circle" src="img/pc_user_logo.png"/>
-                                    <h5>Postazione Operatore</h5>
-                                    <span class="badge badge-warning">OFFLINE</span>
-                                </div>
-                            </div>
-                            <!--COLONNA COLLEGAMENTI USER-MPLS-->
-                            <div class="col-1">
-                                <div class="paddato">
-                                <div class="collegamento link_online"></div>
-                                </div>
-                                <div class="paddato">
-                                    <div class="collegamento link_online"></div>
-                                </div>
-                                <div class="paddato">
-                                    <div class="collegamento link_offline"></div>
-                                </div>
-                            </div>
-                            <!--COLONNA MPLS-->
-                            <div class="col-4">
-                                <div class="mpls rounded-lg text-center">
-                                    <i class="fas fa-cloud fa-5x"></i>
-                                    <h3>MPLS 0</h3>
-                                    <span class="badge badge-success">ONLINE</span>
-                                </div>
+            <!------------- INIZIO DPC / IT ALERT ------->
+           <div class="col-9">
+               <h5 class="titolo_status text-center rounded-lg">DIPARTIMENTO DI PROTEZIONE CIVILE</h5>
+               <div class="row">
+                   <!------------- INIZIO USER e CBE ------->
+                   <div class="col-4">
+                       <div class="wrapper rounded-lg">
+                           <span class="titolo_wrapper">ROMA</span>
+                           <div class="tassello rounded-lg text-center item-offline">
+                               <img class="rounded-circle" src="img/pc_user_logo.png"/>
+                               <h3>OPERATORE RM1</h3>
+                               <span class="badge badge-warning">OFFLINE</span>
+                           </div>
+                           <div class="tassello rounded-lg text-center item-online">
+                               <img class="rounded-circle" src="img/pc_user_logo.png"/>
+                               <h3>OPERATORE RM2</h3>
+                               <span class="badge badge-success">ONLINE</span>
+                           </div>
+                           <div class="tassello rounded-lg text-center">
+                               <img class="rounded-circle" src="img/siam_logo.png"/>
+                               <h3>SiAM</h3>
+                               <span class="badge badge-success">ONLINE</span>
+                           </div>
+                       </div>
+                       <div class="wrapper rounded-lg">
+                           <span class="titolo_wrapper">SAVONA</span>
+                           <div class="tassello rounded-lg text-center item-online">
+                               <img class="rounded-circle" src="img/pc_user_logo.png"/>
+                               <h3>OPERATORE SV1</h3>
+                               <span class="badge badge-success">ONLINE</span>
+                           </div>
+                           <div class="tassello rounded-lg text-center item-offline">
+                               <img class="rounded-circle" src="img/pc_user_logo.png"/>
+                               <h3>OPERATORE SV2</h3>
+                               <span class="badge badge-warning">OFFLINE</span>
+                           </div>
+                           <div class="tassello rounded-lg text-center">
+                               <img class="rounded-circle" src="img/mydewetra_logo.png"/>
+                               <h3>MyDewetra</h3>
+                               <span class="badge badge-success">ONLINE</span>
+                           </div>
+                       </div>
 
-                            </div>
-                            <!--COLONNA COLLEGAMENTI MPLS - CBE-->
-                            <div class="col-1">
-                                <div class="paddato">
-                                    <div class="collegamento link_online"></div>
-                                </div>
-                                <div class="paddato">
-                                    <div class="collegamento link_offline"></div>
-                                </div>
-                                <div class="paddato">
-                                    <div class="collegamento link_online"></div>
-                                </div>
+                   </div>
+                   <div class="col-1">
+                       <div class="allineatore">
+                           <div class="wrapper_link">
+                               <div class="collegamento link_offline"></div>
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
 
-                            </div>
+                           </div>
+                           <div class="wrapper_link">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_offline"></div>
+                               <div class="collegamento link_online attivo"></div>
 
-                            <!--COLONNA CBE-->
-                            <div class="col-3 col-cbe">
-                                <div class="cbe rounded-lg text-center">
-                                    <i class="fas fa-server fa-5x"></i>
-                                    <h5>CBE SAVONA</h5>
-                                    <span class="badge badge-success">ONLINE</span>
-                                </div>
-                                <div class="cbe rounded-lg text-center item-offline">
-                                    <i class="fas fa-server fa-5x"></i>
-                                    <h5>CBE ROMA</h5>
-                                    <span class="badge badge-warning">OFFLINE</span>
-                                </div>
-                                <div class="cbe rounded-lg text-center">
-                                    <i class="fas fa-laptop-code fa-5x"></i>
-                                    <h5>CBE VIRTUALE</h5>
-                                    <span class="badge badge-success">ONLINE</span>
-                                </div>
+                           </div>
+                       </div>
 
-                            </div>
-                        </div>
+                   </div>
+                   <!------------- INIZIO CBE ------->
+                   <div class="col-3">
+                       <div class="cbe rounded-lg text-center item-offline">
+                           <i class="fas fa-server fa-5x"></i>
+                           <h5>CBE ROMA</h5>
+                           <span class="badge badge-warning">OFFLINE</span>
+                       </div>
+                       <div class="cbe rounded-lg text-center">
+                           <i class="fas fa-server fa-5x"></i>
+                           <h5>CBE SAVONA</h5>
+                           <span class="badge badge-success">ONLINE</span>
+                       </div>
+                       <div class="cbe rounded-lg text-center">
+                           <i class="fas fa-laptop-code fa-5x"></i>
+                           <h5>CBE VIRTUALE</h5>
+                           <span class="badge badge-success">ONLINE</span>
+                       </div>
+                   </div>
+                   <!------------- INIZIO COLLEGAMENTI CBE - MPLS ------->
 
-                    </div>
+                   <div class="col-1">
+                       <div class="CBE_link">
+                           <div class="cbe_block">
+                               <div class="collegamento link_offline"></div>
+                               <div class="collegamento link_offline"></div>
+                           </div>
+                           <div class="cbe_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                           <div class="cbe_block">
+                               <div class="collegamento link_offline"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
 
-            </div>
-            <!-- FINE COLONNA MPLS -->
-            <!-- INIZIO COLONNA MPLS -->
-            <div class="col-3">
-                <div class="col_supervisione rounded-lg">
-                    <h5 class="text-right titolo_status">MPLS</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="blocco_collegamenti">
-                                <div class="mpls_link titolo_link">CBE SAVONA</div><div class="collegamento mpls_link link_offline"></div>
-                                <div class="mpls_link titolo_link">CBE ROMA</div><div class="collegamento mpls_link link_offline"></div>
-                                <div class="mpls_link titolo_link">CBE VIRTUALE</div><div class="collegamento mpls_link link_offline"></div>
-                            </div>
-                            <div class="blocco_collegamenti">
-                                <div class="mpls_link titolo_link">CBE SAVONA</div><div class="collegamento mpls_link link_online"></div>
-                                <div class="mpls_link titolo_link">CBE ROMA</div><div class="collegamento mpls_link link_offline"></div>
-                                <div class="mpls_link titolo_link">CBE VIRTUALE</div><div class="collegamento mpls_link link_online"></div>
-                            </div>
-                            <div class="blocco_collegamenti">
-                                <div class="mpls_link titolo_link">CBE SAVONA</div><div class="collegamento mpls_link link_online"></div>
-                                <div class="mpls_link titolo_link">CBE ROMA</div><div class="collegamento mpls_link link_offline"></div>
-                                <div class="mpls_link titolo_link">CBE VIRTUALE</div><div class="collegamento mpls_link link_online"></div>
-                            </div>
-                            <div class="blocco_collegamenti">
-                                <div class="mpls_link titolo_link">CBE SAVONA</div><div class="collegamento mpls_link link_online"></div>
-                                <div class="mpls_link titolo_link">CBE ROMA</div><div class="collegamento mpls_link link_offline"></div>
-                                <div class="mpls_link titolo_link">CBE VIRTUALE</div><div class="collegamento mpls_link link_online"></div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-cbe">
-                            <div class="cbe rounded-lg text-center mpls1234 item-offline">
-                                <i class="fas fa-cloud fa-2x"></i>
-                                <h5>MPLS 1</h5>
-                                <span class="badge badge-warning">OFFLINE</span>
-                            </div>
-                            <div class="cbe rounded-lg text-center mpls1234">
-                                <i class="fas fa-cloud fa-2x"></i>
-                                <h5>MPLS 2</h5>
-                                <span class="badge badge-success">ONLINE</span>
-                            </div>
-                            <div class="cbe rounded-lg text-center mpls1234">
-                                <i class="fas fa-cloud fa-2x"></i>
-                                <h5>MPLS 3</h5>
-                                <span class="badge badge-success">ONLINE</span>
-                            </div>
-                            <div class="cbe rounded-lg text-center mpls1234">
-                                <i class="fas fa-cloud fa-2x"></i>
-                                <h5>MPLS 4</h5>
-                                <span class="badge badge-success">ONLINE</span>
-                            </div>
-                        </div>
-                    </div>
+                       </div>
 
-                </div>
-            </div>
-            <!-- FINE COLONNA MPLS -->
-            <!-- INIZIO COLONNA GESTORI -->
-            <div class="col-3">
-                <div class="col_supervisione rounded-lg">
-                    <h5 class="text-right titolo_status">GESTORI TELEFONICI</h5>
+                   </div>
+                   <!------------- INIZIO MPLS ------->
+                   <div class="col-3">
+                       <div class="mpls rounded-lg text-center left">
+                           <i class="fas fa-cloud fa-5x"></i>
+                           <h3>MPLS 0</h3>
+                       </div>
 
-                </div>
-            </div>
-            <!-- FINE COLONNA GESTORI -->
+                   </div>
+               </div>
+           </div>
+            <!------------- FINE DPC / IT ALERT ------->
+            <!------------- INIZION OPERATORI TEL ------->
+           <div class="col-3 bg-grey pad_bottom20">
+
+               <h5 class="titolo_status text-center rounded-lg bg-orange">OPERATORI TELEFONICI</h5>
+               <div class="row">
+                   <div class="col-1"> <!-- COLL OPERATORI-->
+                       <div class="operatori_link">
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                       </div>
+                       <div class="operatori_link">
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_offline"></div>
+                           </div>
+                       </div>
+                       <div class="operatori_link">
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                       </div>
+                       <div class="operatori_link">
+                           <div class="cbc_block">
+                               <div class="collegamento link_online attivo"></div>
+                               <div class="collegamento link_online attivo"></div>
+                           </div>
+                           <div class="cbc_block">
+                               <div class="collegamento link_offline"></div>
+                               <div class="collegamento link_offline"></div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-10 text-center">
+                       <div class="operatori rounded-lg ">
+                           <img src="img/logo_tim.png"/>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-1 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-2 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                       </div>
+                       <div class="operatori rounded-lg">
+                           <img src="img/logo_vodafone.png"/>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-1 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-2 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                       </div>
+                       <div class="operatori rounded-lg">
+                           <img src="img/logo_wind-3.png"/>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-1 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-2 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                       </div>
+                       <div class="operatori rounded-lg">
+                           <img src="img/logo_iliad.png"/>
+                           <div class="operatori--cbc rounded-lg">
+                               <span class="h5 align-middle">CBC-1 </span> <span class="badge badge-success align-middle">ONLINE</span>
+                           </div>
+                           <div class="operatori--cbc rounded-lg item-offline">
+                               <span class="h5 align-middle">CBC-2 </span> <span class="badge badge-warning align-middle">OFFLINE</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-1 parte_dx">
+                       <div class="operatori_link">
+
+                   </div>
+               </div>
+           </div>
+            <!------------- FINE OPERATORI TEL ------->
+
+
         </div>
     </div>
 </section>

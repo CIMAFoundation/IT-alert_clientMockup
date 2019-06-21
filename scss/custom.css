@@ -499,18 +499,38 @@ textarea {
 
 .tassello {
   border: 4px solid green;
-  min-height: 192px;
   margin-top: 20px;
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
 }
-.tassello h5 {
-  margin-top: 10px;
-  font-weight: 600;
+.tassello h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.tassello img {
+  height: 50px;
+}
+.tassello .fas {
+  color: grey;
+}
+
+.tassello_link {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 93px;
+  width: 100px;
+  margin-left: -23px;
 }
 
 .collegamento {
   height: 5px;
-  width: 60px;
+  width: 78px;
 }
 
 .link_online {
@@ -518,7 +538,19 @@ textarea {
 }
 
 .link_offline {
-  background-color: orange;
+  background: repeating-linear-gradient(-45deg, orange, orange 28px, transparent 28px, transparent 36px);
+}
+
+.attivo {
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+  animation-direction: reverse;
 }
 
 .paddato {
@@ -527,13 +559,21 @@ textarea {
 
 .mpls {
   border: 4px solid green;
-  min-height: 648px;
-  margin-top: 20px;
+  min-height: 655px;
+  margin: 20px;
   padding: 10px;
   padding-top: 80%;
 }
 .mpls .fas {
   color: grey;
+}
+
+.left {
+  margin-left: 0px;
+}
+
+.right {
+  margin-right: 0px;
 }
 
 .col-cbe .fas {
@@ -544,7 +584,7 @@ textarea {
 }
 
 .cbe {
-  min-height: 192px;
+  min-height: 202px;
   margin-top: 20px;
   padding: 10px;
   border: 4px solid green;
@@ -554,16 +594,32 @@ textarea {
   font-weight: 600;
 }
 
+.cbe_block {
+  min-height: 202px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid transparent;
+}
+.cbe_block .collegamento {
+  margin-top: 52px;
+  width: 129px;
+  z-index: 9;
+  position: relative;
+  margin-left: -26px;
+  height: 10px;
+}
+
 .titolo_status {
   background-color: #243d7d;
   padding-right: 10px;
   color: white;
   font-weight: 600;
   padding: 5px;
+  margin-top: 20px;
 }
 
 .mpls1234 {
-  min-height: 147px;
+  min-height: 15%;
   margin-top: 20px;
   padding: 10px;
   border: 4px solid green;
@@ -571,6 +627,103 @@ textarea {
 .mpls1234 h5 {
   margin-top: 10px;
   font-weight: 600;
+}
+
+.operatori {
+  min-height: 147px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+}
+.operatori h5 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+.operatori img {
+  height: 25px;
+}
+
+.titolo_wrapper {
+  font-weight: 900;
+  font-size: 1.2em;
+  position: absolute;
+  margin-top: -19px;
+  background-color: white;
+  padding: 0px 10px 0px 10px;
+}
+
+.wrapper {
+  min-height: 147px;
+  margin-top: 20px;
+  padding: 0px 10px 10px 10px;
+  border: 2px solid grey;
+}
+
+.wrapper_link {
+  min-height: 314px;
+  margin-top: 20px;
+  padding: 0px 10px 10px 10px;
+  border: 2px solid transparent;
+}
+.wrapper_link .collegamento {
+  margin-top: 90px;
+  width: 75px;
+  z-index: 9;
+  position: relative;
+  margin-left: -36px;
+  height: 10px;
+}
+
+.allineatore {
+  margin-top: -36px;
+}
+
+.cbc_block {
+  margin-top: 26px;
+}
+
+.operatori_link {
+  min-height: 148px;
+  margin-top: 20px;
+  padding-top: 33px;
+  border: 1px solid transparent;
+  margin-left: -33px;
+}
+.operatori_link .collegamento {
+  margin-top: 10px;
+  width: 83px;
+  z-index: 9;
+  position: relative;
+}
+
+.parte_dx {
+  /*VARIANTI PARTE DESTRA*/
+}
+.parte_dx .operatori_link {
+  margin-left: -24px;
+}
+.parte_dx .attivo {
+  animation-direction: normal;
+}
+
+.operatori--cbc {
+  min-height: 15%;
+  margin-top: 10px;
+  border: 4px solid green;
+}
+.operatori--cbc .h5 {
+  margin: auto 5px auto 5px;
+  font-weight: 600;
+  display: inline;
+  padding-bottom: 1px;
+}
+
+.pad_bottom20 {
+  padding-bottom: 20px;
+}
+
+.bg-orange {
+  background-color: #06c;
 }
 
 .mpls_link {
