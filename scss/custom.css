@@ -118,6 +118,9 @@ hr {
   -webkit-transform-origin: 50% 50%;
   box-shadow: inset 4px 4px 5px 0px #e4e4e4;
 }
+.main_menu #status .nav-link.active:after {
+  background: #f7f7f9;
+}
 
 /*===========================
            LOGIN PAGE
@@ -478,25 +481,9 @@ textarea {
   border-left: solid 8px #e1740e;
 }
 
-.btn-orange {
-  color: #fff;
-  background-color: #e1740e;
-  border-color: #e1740e;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  margin-top: 10px;
-}
-
-.col_supervisione {
-  background-color: #f7f7f9;
-  padding-top: 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  min-height: calc(100vh - (140px + 80px + 12px));
-  /*min-height: 652px;*/
-  margin: 20px 5px;
-}
-
+/*===================================
+        REPORT ISTANZE
+=====================================*/
 .tassello {
   border: 4px solid green;
   margin-top: 20px;
@@ -553,10 +540,6 @@ textarea {
   animation-direction: reverse;
 }
 
-.paddato {
-  padding: 110px 0 110px 0;
-}
-
 .mpls {
   border: 4px solid green;
   min-height: 655px;
@@ -576,18 +559,14 @@ textarea {
   margin-right: 0px;
 }
 
-.col-cbe .fas {
-  color: grey;
-}
-.col-cbe .fa-5x {
-  font-size: 4.7em;
-}
-
 .cbe {
   min-height: 202px;
   margin-top: 20px;
   padding: 10px;
   border: 4px solid green;
+}
+.cbe .fas {
+  color: grey;
 }
 .cbe h5 {
   margin-top: 10px;
@@ -609,6 +588,14 @@ textarea {
   height: 10px;
 }
 
+.demo {
+  margin-top: 9px;
+}
+.demo .collegamento {
+  height: 3px;
+  margin-top: 3px;
+}
+
 .titolo_status {
   background-color: #243d7d;
   padding-right: 10px;
@@ -616,17 +603,6 @@ textarea {
   font-weight: 600;
   padding: 5px;
   margin-top: 20px;
-}
-
-.mpls1234 {
-  min-height: 15%;
-  margin-top: 20px;
-  padding: 10px;
-  border: 4px solid green;
-}
-.mpls1234 h5 {
-  margin-top: 10px;
-  font-weight: 600;
 }
 
 .operatori {
@@ -641,6 +617,32 @@ textarea {
 }
 .operatori img {
   height: 25px;
+}
+
+.operatori_link {
+  min-height: 148px;
+  margin-top: 20px;
+  padding-top: 33px;
+  border: 1px solid transparent;
+  margin-left: -33px;
+}
+.operatori_link .collegamento {
+  margin-top: 10px;
+  width: 83px;
+  z-index: 9;
+  position: relative;
+}
+
+.operatori--cbc {
+  min-height: 15%;
+  margin-top: 10px;
+  border: 4px solid green;
+}
+.operatori--cbc .h5 {
+  margin: auto 5px auto 5px;
+  font-weight: 600;
+  display: inline;
+  padding-bottom: 1px;
 }
 
 .titolo_wrapper {
@@ -682,48 +684,70 @@ textarea {
   margin-top: 26px;
 }
 
-.operatori_link {
-  min-height: 148px;
-  margin-top: 20px;
-  padding-top: 33px;
-  border: 1px solid transparent;
-  margin-left: -33px;
-}
-.operatori_link .collegamento {
-  margin-top: 10px;
-  width: 83px;
-  z-index: 9;
-  position: relative;
-}
-
-.parte_dx {
-  /*VARIANTI PARTE DESTRA*/
-}
-.parte_dx .operatori_link {
-  margin-left: -24px;
-}
-.parte_dx .attivo {
-  animation-direction: normal;
-}
-
-.operatori--cbc {
-  min-height: 15%;
-  margin-top: 10px;
-  border: 4px solid green;
-}
-.operatori--cbc .h5 {
-  margin: auto 5px auto 5px;
-  font-weight: 600;
-  display: inline;
-  padding-bottom: 1px;
-}
-
 .pad_bottom20 {
   padding-bottom: 20px;
 }
 
-.bg-orange {
+.bg-blue {
   background-color: #06c;
+}
+
+.item-offline {
+  border: 4px solid orange;
+  background-color: #ffdfc1;
+}
+
+/* ==== NOT USED =====*/
+/*.btn-orange {
+  color: #fff;
+  background-color: #e1740e;
+  border-color: #e1740e;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  margin-top: 10px;
+}
+
+
+.col_supervisione {
+  background-color: #f7f7f9;
+  padding-top: 15px;
+  padding-left: $pad_25;
+  padding-right: $pad_25;
+  min-height: calc(100vh - (140px + 80px + 12px));
+margin: 20px 5px;
+
+}
+  .paddato {
+  padding: 110px 0 110px 0;
+}
+
+.parte_dx {
+  .operatori_link {margin-left: -24px}
+
+
+  .attivo {animation-direction:normal;
+  }
+}
+
+.col-cbe {
+      .fas {
+        color: grey;
+      }
+      .fa-5x {
+        font-size: 4.7em;
+      }
+}
+
+.mpls1234 {
+  min-height: 15%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+  h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
 }
 
 .mpls_link {
@@ -732,18 +756,12 @@ textarea {
   text-align: center;
 }
 
-.titolo_link {
-  padding-top: 11px;
-}
+.titolo_link {padding-top: 11px}
 
-.blocco_collegamenti {
-  height: 150px;
-  margin-top: 15px;
-}
+.blocco_collegamenti {height: 150px;
+margin-top: 15px}
 
-.item-offline {
-  border: 4px solid orange;
-  background-color: #ffdfc1;
-}
+
+ */
 
 /*# sourceMappingURL=custom.css.map */

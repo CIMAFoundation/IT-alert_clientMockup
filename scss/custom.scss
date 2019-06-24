@@ -148,6 +148,13 @@ cursor: no-drop;
     box-shadow: inset 4px 4px 5px 0px #e4e4e4;
   } /*inserisce triangolo sotto menu*/
 
+  #status {
+    .nav-link.active:after{
+
+      background: #f7f7f9;;
+    }
+  }
+
 
 
 }
@@ -539,25 +546,14 @@ margin-top: 10px}
 
 }
 
-.btn-orange {
-  color: #fff;
-  background-color: #e1740e;
-  border-color: #e1740e;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-  margin-top: 10px;
-}
 
-.col_supervisione {
-  background-color: #f7f7f9;
-  padding-top: 15px;
-  padding-left: $pad_25;
-  padding-right: $pad_25;
-  min-height: calc(100vh - (#{$h-header} + #{$h-footer} + #{12px}));
-  /*min-height: 652px;*/
-  margin: 20px 5px;
 
-}
+/*===================================
+        REPORT ISTANZE
+=====================================*/
+
+
+
 
 .tassello {
   border: 4px solid green;
@@ -615,11 +611,6 @@ animation: progress-bar-stripes 2s linear infinite;
   animation-direction:reverse;
 }
 
-
-  .paddato {
-  padding: 110px 0 110px 0;
-}
-
 .mpls {
   border: 4px solid green;
   min-height: 655px;
@@ -635,20 +626,15 @@ animation: progress-bar-stripes 2s linear infinite;
 .left{margin-left: 0px}
 .right{margin-right: 0px}
 
-.col-cbe {
-      .fas {
-        color: grey;
-      }
-      .fa-5x {
-        font-size: 4.7em;
-      }
-}
-
 .cbe {
   min-height: 202px;
   margin-top: 20px;
   padding: 10px;
   border: 4px solid green;
+
+  .fas {
+    color: grey;
+  }
 
   h5 {
     margin-top: 10px;
@@ -672,6 +658,16 @@ animation: progress-bar-stripes 2s linear infinite;
 
 }
 
+.demo {
+  margin-top: 9px;
+
+  .collegamento {
+    height: 3px;
+    margin-top: 3px;
+
+  }
+}
+
 .titolo_status {
   background-color: $deepblue;
   padding-right: 10px;
@@ -679,20 +675,6 @@ animation: progress-bar-stripes 2s linear infinite;
   font-weight: 600;
   padding: 5px;
   margin-top: 20px;
-}
-
-
-
-.mpls1234 {
-  min-height: 15%;
-  margin-top: 20px;
-  padding: 10px;
-  border: 4px solid green;
-  h5 {
-    margin-top: 10px;
-    font-weight: 600;
-  }
-
 }
 
 .operatori {
@@ -708,6 +690,35 @@ animation: progress-bar-stripes 2s linear infinite;
     height: 25px;
   }
 }
+
+.operatori_link {
+
+  min-height: 148px;
+  margin-top: 20px;
+  padding-top: 33px;
+  border: 1px solid transparent;
+  margin-left: -33px;
+  .collegamento {
+    margin-top: 10px;
+    width: 83px;
+    z-index: 9;
+    position: relative;
+
+  }
+}
+
+.operatori--cbc {
+  min-height: 15%;
+  margin-top: 10px;
+  border: 4px solid green;
+  .h5 {
+    margin: auto 5px auto 5px;
+    font-weight: 600;
+    display: inline;
+    padding-bottom: 1px;
+  }
+}
+
 
 .titolo_wrapper {
   font-weight: 900;
@@ -745,24 +756,43 @@ animation: progress-bar-stripes 2s linear infinite;
 
 }
 
+.pad_bottom20 {padding-bottom: 20px}
 
-.operatori_link {
+.bg-blue {background-color: #06c;}
 
-  min-height: 148px;
-  margin-top: 20px;
-  padding-top: 33px;
-  border: 1px solid transparent;
-  margin-left: -33px;
-  .collegamento {
-    margin-top: 10px;
-    width: 83px;
-    z-index: 9;
-    position: relative;
 
-  }
+.item-offline {
+  border: 4px solid $orange;
+  background-color: #ffdfc1;
 }
 
-.parte_dx { /*VARIANTI PARTE DESTRA*/
+
+/* ==== NOT USED =====*/
+
+/*.btn-orange {
+  color: #fff;
+  background-color: #e1740e;
+  border-color: #e1740e;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  margin-top: 10px;
+}
+
+
+.col_supervisione {
+  background-color: #f7f7f9;
+  padding-top: 15px;
+  padding-left: $pad_25;
+  padding-right: $pad_25;
+  min-height: calc(100vh - (#{$h-header} + #{$h-footer} + #{12px}));
+margin: 20px 5px;
+
+}
+  .paddato {
+  padding: 110px 0 110px 0;
+}
+
+.parte_dx {
   .operatori_link {margin-left: -24px}
 
 
@@ -770,21 +800,26 @@ animation: progress-bar-stripes 2s linear infinite;
   }
 }
 
-.operatori--cbc {
-  min-height: 15%;
-  margin-top: 10px;
-  border: 4px solid green;
-  .h5 {
-    margin: auto 5px auto 5px;
-    font-weight: 600;
-    display: inline;
-    padding-bottom: 1px;
-  }
+.col-cbe {
+      .fas {
+        color: grey;
+      }
+      .fa-5x {
+        font-size: 4.7em;
+      }
 }
 
-.pad_bottom20 {padding-bottom: 20px}
+.mpls1234 {
+  min-height: 15%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid green;
+  h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
 
-.bg-orange {background-color: #06c;}
+}
 
 .mpls_link {
   font-weight: 600;
@@ -797,14 +832,8 @@ animation: progress-bar-stripes 2s linear infinite;
 .blocco_collegamenti {height: 150px;
 margin-top: 15px}
 
-.item-offline {
-  border: 4px solid $orange;
-  background-color: #ffdfc1;
-}
 
-
-
-
+ */
 
 
 
