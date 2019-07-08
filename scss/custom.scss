@@ -171,7 +171,6 @@ cursor: no-drop;
 .login_form {
   background-color: #fff;
   padding: 25px 10px 25px 10px;
-
 }
 
 .login_container {
@@ -180,6 +179,15 @@ cursor: no-drop;
   padding-left: $pad_25;
   min-height: 797px;
 
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #e1740e;
+  border-color: #e1740e;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  margin-top: 10px;
 }
 
 /*===========================
@@ -769,14 +777,7 @@ animation: progress-bar-stripes 2s linear infinite;
 
 /* ==== NOT USED =====*/
 
-/*.btn-orange {
-  color: #fff;
-  background-color: #e1740e;
-  border-color: #e1740e;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-  margin-top: 10px;
-}
+/*
 
 
 .col_supervisione {
